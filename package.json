@@ -1,0 +1,61 @@
+{
+  "name": "vscode-accessible-theme",
+  "version": "1.0.0",
+  "description": "WCAG AA-friendly syntax highlighting in dark and light variants.",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "themes",
+    "theme",
+    "vscode",
+    "a11y",
+    "syntax-highlighting",
+    "accessible",
+    "AA",
+    "accessibility",
+    "WCAG"
+  ],
+  "homepage": "https://github.com/phun-ky/vscode-accessible-theme#readme",
+  "bugs": {
+    "url": "https://github.com/phun-ky/vscode-accessible-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phun-ky/vscode-accessible-theme.git"
+  },
+  "license": "MIT",
+  "author": "Alexander Vassbotn Røyne-Helgesen <alexander@phun-ky.net>",
+  "scripts": {
+    "commit": "npx git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Accessible (AA) Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/accessible-dark-color-theme.json"
+      },
+      {
+        "label": "Accessible (AA) Light",
+        "uiTheme": "vs",
+        "path": "./themes/accessible-light-color-theme.json"
+      }
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  },
+  "devDependencies": {
+    "git-cz": "^4.9.0"
+  },
+  "engines": {
+    "vscode": ">=1.70.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
