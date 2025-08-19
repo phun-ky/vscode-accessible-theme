@@ -3,7 +3,6 @@
   "displayName": "Accessible (AA) Theme",
   "version": "1.0.2",
   "description": "WCAG AA-friendly syntax highlighting in dark and light variants.",
-  "publisher": "phun-ky",
   "categories": [
     "Themes"
   ],
@@ -28,8 +27,12 @@
   },
   "license": "MIT",
   "author": "Alexander Vassbotn Røyne-Helgesen <alexander@phun-ky.net>",
+  "publisher": "phun-ky",
   "scripts": {
     "commit": "npx git-cz",
+    "release": "release-it",
+    "style:format": "./node_modules/.bin/eslint -c ./eslint.config.mjs src  --fix && ./node_modules/.bin/prettier --write ./eslint.config.mjs src",
+    "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributes": {
@@ -52,7 +55,12 @@
     }
   },
   "devDependencies": {
-    "git-cz": "^4.9.0"
+    "@release-it/conventional-changelog": "^10.0.0",
+    "eslint": "^9.20.0",
+    "eslint-config-phun-ky": "^1.0.0",
+    "git-cz": "^4.9.0",
+    "prettier": "3.5.3",
+    "release-it": "^19.0.1"
   },
   "engines": {
     "vscode": ">=1.70.0"
