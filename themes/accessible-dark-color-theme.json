@@ -43,7 +43,7 @@
     "tab.activeForeground": "#E4E4E7",
     "tab.inactiveBackground": "#262831",
     "tab.inactiveForeground": "#8C9B9B",
-    "tab.border": "#262831",
+    "tab.border": "#303445",
     "tab.activeBorderTop": "#469EDD",
     "editorGroup.border": "#303445",
     "editorGroupHeader.tabsBackground": "#262831",
@@ -101,7 +101,7 @@
     "editorWidget.border": "#303445",
 
     "gitDecoration.addedResourceForeground": "#2CAAA0",
-    "gitDecoration.modifiedResourceForeground": "#469EDD",
+    "gitDecoration.modifiedResourceForeground": "#C79500",
     "gitDecoration.deletedResourceForeground": "#FF6666",
     "gitDecoration.ignoredResourceForeground": "#8C9B9B",
     "gitDecoration.untrackedResourceForeground": "#2CAAA0",
@@ -113,7 +113,7 @@
     "terminal.ansiGreen": "#2CAAA0",
     "terminal.ansiYellow": "#C79500",
     "terminal.ansiBlue": "#469EDD",
-    "terminal.ansiMagenta": "#99acb2",
+    "terminal.ansiMagenta": "#DB70B7",
     "terminal.ansiCyan": "#2CAAA0",
     "terminal.ansiWhite": "#E4E4E7",
     "terminal.ansiBrightRed": "#FF6666",
@@ -180,6 +180,11 @@
         "keyword.other.unit"
       ],
       "settings": { "foreground": "#FFFFFF" }
+    },
+    {
+      "name": "Storage type TS",
+      "scope": ["storage.type.ts", "support.variable.property.ts"],
+      "settings": { "foreground": "#95c1e2" }
     },
 
     {
@@ -396,7 +401,12 @@
     {
       "name": "CSS Classes",
       "scope": ["entity.other.attribute-name.class"],
-      "settings": { "foreground": "#E4E4E7" }
+      "settings": { "foreground": "#2CAAA0" }
+    },
+    {
+      "name": "CSS pseudo",
+      "scope": ["entity.other.attribute-name.pseudo-element.css"],
+      "settings": { "foreground": "#72c6c0" }
     },
     {
       "name": "CSS IDs (Sass control)",
@@ -451,7 +461,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
-      "settings": { "foreground": "#E4E4E7" }
+      "settings": { "foreground": "#469EDD" }
     },
     {
       "name": "Markdown - Plain",
@@ -511,7 +521,7 @@
     {
       "name": "Markdown - Link",
       "scope": ["string.other.link.title.markdown"],
-      "settings": { "foreground": "#469EDD" }
+      "settings": { "foreground": "#2CAAA0" }
     },
     {
       "name": "Markdown - Link Description",
