@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.3...1.0.4) (2025-08-19)
+
+### Bug
+
+* 🐛 Add correct token inclusion ([6db8300](https://github.com/phun-ky/vscode-accessible-theme/commit/6db83007c94c7a0a7c839fa3be504a17031b5236))
+* 🐛 Give correct permission for action ([2e69eb3](https://github.com/phun-ky/vscode-accessible-theme/commit/2e69eb3ef30062e004d24cb7ac0c42fe287162c5))
+
 ## 1.0.3 (2025-08-19)
 
 ### Tasks
