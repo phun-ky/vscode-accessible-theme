@@ -1,48 +1,34 @@
 {
   "name": "vscode-accessible-theme",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "WCAG AA-friendly syntax highlighting in dark and light variants.",
-  "categories": [
-    "Themes"
-  ],
   "keywords": [
-    "themes",
-    "theme",
-    "vscode",
-    "a11y",
-    "syntax-highlighting",
-    "accessible",
     "AA",
+    "WCAG",
+    "a11y",
     "accessibility",
-    "WCAG"
+    "accessible",
+    "syntax-highlighting",
+    "theme",
+    "themes",
+    "vscode"
   ],
   "homepage": "https://github.com/phun-ky/vscode-accessible-theme#readme",
   "bugs": {
     "url": "https://github.com/phun-ky/vscode-accessible-theme/issues"
   },
+  "license": "MIT",
+  "author": "Alexander Vassbotn Røyne-Helgesen <alexander@phun-ky.net>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phun-ky/vscode-accessible-theme.git"
   },
-  "license": "MIT",
-  "author": "Alexander Vassbotn Røyne-Helgesen <alexander@phun-ky.net>",
   "scripts": {
     "commit": "npx git-cz",
+    "release": "release-it",
+    "style:format": "./node_modules/.bin/eslint -c ./eslint.config.mjs src  --fix && ./node_modules/.bin/prettier --write ./eslint.config.mjs src",
+    "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "contributes": {
-    "themes": [
-      {
-        "label": "Accessible (AA) Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/accessible-dark-color-theme.json"
-      },
-      {
-        "label": "Accessible (AA) Light",
-        "uiTheme": "vs",
-        "path": "./themes/accessible-light-color-theme.json"
-      }
-    ]
   },
   "config": {
     "commitizen": {
@@ -50,12 +36,36 @@
     }
   },
   "devDependencies": {
-    "git-cz": "^4.9.0"
+    "@release-it/conventional-changelog": "^10.0.0",
+    "eslint": "^9.20.0",
+    "eslint-config-phun-ky": "^1.0.0",
+    "git-cz": "^4.9.0",
+    "prettier": "3.5.3",
+    "release-it": "^19.0.1"
   },
   "engines": {
     "vscode": ">=1.70.0"
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Accessible (AA) Dark",
+        "path": "./themes/accessible-dark-color-theme.json",
+        "uiTheme": "vs-dark"
+      },
+      {
+        "label": "Accessible (AA) Light",
+        "path": "./themes/accessible-light-color-theme.json",
+        "uiTheme": "vs"
+      }
+    ]
+  },
+  "displayName": "Accessible (AA) Theme",
+  "publisher": "phun-ky"
 }

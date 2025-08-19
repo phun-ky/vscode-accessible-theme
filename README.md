@@ -1,7 +1,7 @@
 # Accessible (AA) Theme<!-- omit from toc -->
 
 A pair of **accessible, high-contrast VS Code themes** designed for readability, clarity, and reduced eye strain.  
-This theme family includes both **Dark** and **Light** variants, tuned for **WCAG AA accessibility**.
+This theme family includes both **Dark** and **Light** variants, tuned for **WCAG AA accessibility**. Based on the article [Accessible syntax highlight theme](https://phun-ky.net/2023/10/06/accessible-syntax-highlight-theme).
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com)
@@ -11,7 +11,15 @@ This theme family includes both **Dark** and **Light** variants, tuned for **WCA
 
 ## Table of Contents<!-- omit from toc -->
 
-- [About](#about)
+- [Features](#features)
+- [Palette](#palette)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Accessibility](#accessibility)
+- [Contributing](#contributing)
+- [License](#license)
+- [Changelog](#changelog)
+- [Sponsor me](#sponsor-me)
 
 ![Screenshot of vscode with dark theme](./public/dark.png)
 
@@ -33,14 +41,22 @@ This theme family includes both **Dark** and **Light** variants, tuned for **WCA
 
 Core colors used across both dark and light variants:
 
-- **Blue** `#469EDD` – functions, curly braces, headings, highlights
-- **Teal** `#2CAAA0` – strings, attributes, exports/imports
-- **Gold** `#C79500` – operators, numbers, parentheses
-- **Gray** `#8C9B9B` – punctuation, inactive UI text
-- **Steel** `#99ACB2` – comments, subtle accents
-- **Red** `#FF6666` – errors, invalid, git deletes
-- **Foreground** `#E4E4E7` (dark) / `#030303` (light) – primary text
-- **Background** `#262831` (dark) / `#FFFFFF` (light) – editor background
+| Color            | Hex       | Ratio   | Normal Text | Large Text |
+| ---------------- | --------- | ------- | ----------- | ---------- |
+| Arona            | `#859BA3` | 5.04:1  | AA          | AAA        |
+| Vivid Amber      | `#C79500` | 5.4:1   | AA          | AAA        |
+| Sea Kale         | `#2CAAA0` | 5.14:1  | AA          | AAA        |
+| Flax Flower Blue | `#469EDD` | 5.03:1  | AA          | AAA        |
+| Boredom          | `#8C9B9B` | 5.08:1  | AA          | AAA        |
+| Lilac Mist       | `#E4E4E7` | 11.57:1 | AAA         | AAA        |
+| Pompelmo         | `#FF6666` | 5.13:1  | AA          | AAA        |
+| Distance         | `#566D71` | 5.07:1  | AA          | AAA        |
+| Ground Earth     | `#806200` | 5.29:1  | AA          | AAA        |
+| Advantageous     | `#1E766D` | 5.01:1  | AA          | AAA        |
+| Jazz Blue        | `#1D699F` | 5.43:1  | AA          | AAA        |
+| Mountain Pass    | `#5C6A6A` | 5.21:1  | AA          | AAA        |
+| Black            | `#000000` | 19.4:1  | AAA         | AAA        |
+| Rebellion Red    | `#CD0404` | 5.36:1  | AA          | AAA        |
 
 ![Screenshot of vscode with light theme](./public/light.png)
 

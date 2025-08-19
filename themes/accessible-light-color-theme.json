@@ -43,7 +43,7 @@
     "tab.activeForeground": "#000000",
     "tab.inactiveBackground": "#F5F6F7",
     "tab.inactiveForeground": "#5C6A6A",
-    "tab.border": "#F5F6F7",
+    "tab.border": "#5C6A6A",
     "tab.activeBorderTop": "#1D699F",
     "editorGroup.border": "#D8DCE2",
     "editorGroupHeader.tabsBackground": "#F5F6F7",
@@ -113,7 +113,7 @@
     "terminal.ansiGreen": "#1E766D",
     "terminal.ansiYellow": "#806200",
     "terminal.ansiBlue": "#1D699F",
-    "terminal.ansiMagenta": "#566D71",
+    "terminal.ansiMagenta": "#BD28A4",
     "terminal.ansiCyan": "#1E766D",
     "terminal.ansiWhite": "#000000",
     "terminal.ansiBrightRed": "#CD0404",
@@ -457,7 +457,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json",
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
-      "settings": { "foreground": "#000000" }
+      "settings": { "foreground": "#1D699F" }
     },
     {
       "name": "Markdown - Plain",
@@ -517,7 +517,7 @@
     {
       "name": "Markdown - Link",
       "scope": ["string.other.link.title.markdown"],
-      "settings": { "foreground": "#1D699F" }
+      "settings": { "foreground": "#1E766D" }
     },
     {
       "name": "Markdown - Link Description",
