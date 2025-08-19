@@ -1,7 +1,7 @@
 {
   "name": "vscode-accessible-theme",
   "displayName": "Accessible (AA) Theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "WCAG AA-friendly syntax highlighting in dark and light variants.",
   "publisher": "phun-ky",
   "categories": [
