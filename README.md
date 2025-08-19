@@ -13,6 +13,8 @@ This theme family includes both **Dark** and **Light** variants, tuned for **WCA
 
 - [About](#about)
 
+![Screenshot of vscode with dark theme](./public/dark.png)
+
 ## Features
 
 - Carefully balanced color palette with consistent contrasts
@@ -39,6 +41,8 @@ Core colors used across both dark and light variants:
 - **Red** `#FF6666` – errors, invalid, git deletes
 - **Foreground** `#E4E4E7` (dark) / `#030303` (light) – primary text
 - **Background** `#262831` (dark) / `#FFFFFF` (light) – editor background
+
+![Screenshot of vscode with light theme](./public/light.png)
 
 ## Installation
 
