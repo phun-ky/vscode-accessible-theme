@@ -40,7 +40,7 @@ jobs:
       - name: 'Publish to marketplace'
         run: |
           vsce package
-          vsce publish
+          vsce publish -p "${VSCE_TOKEN}"
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
   notify:
