@@ -184,6 +184,7 @@
     {
       "name": "Storage type TS",
       "scope": [
+        "storage.type.tsx",
         "storage.type.ts",
         "support.variable.property.ts",
         "keyword.control.flow.ts"
@@ -221,6 +222,16 @@
       "settings": { "foreground": "#C79500" }
     },
     {
+      "name": "JSX/TSX component",
+      "scope": ["support.class.component.tsx"],
+      "settings": { "foreground": "#C79500" }
+    },
+    {
+      "name": "JSX/TSX component attributes",
+      "scope": ["entity.other.attribute-name.tsx"],
+      "settings": { "foreground": "#E4e4e7" }
+    },
+    {
       "name": "Curly Braces",
       "scope": [
         "punctuation.section.block.begin",
@@ -255,6 +266,16 @@
         "punctuation.definition.tag.end.tsx"
       ],
       "settings": { "foreground": "#E4E4E7" }
+    },
+    {
+      "name": "JSX/TSX children",
+      "scope": ["meta.jsx.children.tsx"],
+      "settings": { "foreground": "#E4E4E7" }
+    },
+    {
+      "name": "Object literal tsx",
+      "scope": ["meta.object-literal.key.tsx"],
+      "settings": { "foreground": "#95c1e2" }
     },
     {
       "name": "Template/Substitution",
@@ -423,7 +444,7 @@
     {
       "name": "HTML tag",
       "scope": ["entity.name.tag.html", "entity.name.tag.tsx"],
-      "settings": { "foreground": "#2CAAA0" }
+      "settings": { "foreground": "#469EDD" }
     },
     {
       "name": "CSS Classes",
