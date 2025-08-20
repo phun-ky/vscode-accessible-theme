@@ -18,6 +18,7 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 - [Installation](#installation)
 - [Usage](#usage)
 - [Accessibility](#accessibility)
+- [Recommended fonts to be used with this theme:](#recommended-fonts-to-be-used-with-this-theme)
 - [Contributing](#contributing)
 - [License](#license)
 - [Changelog](#changelog)
@@ -43,7 +44,10 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 
 ## Palette
 
-Core colors used across both dark and light variants:
+Core colors used across both dark and light variants, UI colors are derived from
+these:
+
+**With dark background: Sky Captain - `#262831`**:
 
 | Color            | Hex       | Ratio   | Normal Text | Large Text |
 | ---------------- | --------- | ------- | ----------- | ---------- |
@@ -54,17 +58,19 @@ Core colors used across both dark and light variants:
 | Boredom          | `#8C9B9B` | 5.08:1  | AA          | AAA        |
 | Lilac Mist       | `#E4E4E7` | 11.57:1 | AAA         | AAA        |
 | Pompelmo         | `#FF6666` | 5.13:1  | AA          | AAA        |
-| Distance         | `#566D71` | 5.07:1  | AA          | AAA        |
-| Ground Earth     | `#806200` | 5.29:1  | AA          | AAA        |
-| Advantageous     | `#1E766D` | 5.01:1  | AA          | AAA        |
-| Jazz Blue        | `#1D699F` | 5.43:1  | AA          | AAA        |
-| Mountain Pass    | `#5C6A6A` | 5.21:1  | AA          | AAA        |
-| Black            | `#000000` | 19.4:1  | AAA         | AAA        |
-| Rebellion Red    | `#CD0404` | 5.36:1  | AA          | AAA        |
 
-![Screenshot of the dark colors](./public/colors-dark.png)
+**With dark background: Gram's Hair - `#F5F6F7`**:
 
-![Screenshot of the light colors](./public/colors-light.png)
+| Color         | Hex       | Ratio  | Normal Text | Large Text |
+| ------------- | --------- | ------ | ----------- | ---------- |
+| Distance      | `#566D71` | 5.07:1 | AA          | AAA        |
+| Ground Earth  | `#806200` | 5.29:1 | AA          | AAA        |
+| Advantageous  | `#1E766D` | 5.07:1 | AA          | AAA        |
+| Jazz Blue     | `#1D699F` | 5.43:1 | AA          | AAA        |
+| Windsurfing   | `#366E96` | 5.43:1 | AA          | AAA        |
+| Mountain Pass | `#5C6A6A` | 5.21:1 | AA          | AAA        |
+| Black         | `#000000` | 19.4:1 | AAA         | AAA        |
+| Pepper Jelly  | `#C92243` | 5.11:1 | AA          | AAA        |
 
 ## Installation
 
@@ -83,10 +89,17 @@ Select **Accessible (AA) Dark** or **Accessible (AA) Light**.
 
 ## Accessibility
 
-- Meets **WCAG AA contrast standards** for text and UI
+- Meets **WCAG AA contrast standards** for text and UI (UI to be tested, stay
+  tuned!)
 - Designed to be legible for long coding sessions
 - Balanced bracket colors for better nesting visibility
 - Comments are distinguishable without being distracting
+
+## Recommended fonts to be used with this theme:
+
+```
+Menlo for Powerline, Menlo, Consolas, DejaVu Sans Mono, 'Droid Sans Mono', 'monospace', monospace
+```
 
 ## Contributing
 
