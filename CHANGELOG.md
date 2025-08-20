@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.7](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.6...1.0.7) (2025-08-20)
+
+### Bug
+
+* 🐛 HTML and JSX colors ([1248b2b](https://github.com/phun-ky/vscode-accessible-theme/commit/1248b2bfd5cdfefde5e37f7b3d90a6f5104a1a4f))
+
 ## [1.0.6](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.5...1.0.6) (2025-08-20)
 
 ### Tasks
