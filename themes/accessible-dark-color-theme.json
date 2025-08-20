@@ -242,11 +242,19 @@
         "meta.tag",
         "punctuation.definition.tag",
         "punctuation.definition.tag.html",
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html",
         "punctuation.section.embedded"
       ],
       "settings": { "foreground": "#8C9B9B" }
+    },
+    {
+      "name": "Tag start/end",
+      "scope": [
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.definition.tag.begin.tsx",
+        "punctuation.definition.tag.end.tsx"
+      ],
+      "settings": { "foreground": "#E4E4E7" }
     },
     {
       "name": "Template/Substitution",
@@ -402,10 +410,20 @@
     {
       "name": "HTML Attributes (italic)",
       "scope": [
-        "text.html.basic entity.other.attribute-name.html",
-        "text.html.basic entity.other.attribute-name"
+        "entity.other.attribute-name.html",
+        "entity.other.attribute-name"
       ],
-      "settings": { "fontStyle": "italic", "foreground": "#2CAAA0" }
+      "settings": { "fontStyle": "italic", "foreground": "#469EDD" }
+    },
+    {
+      "name": "HTML Attributes strings",
+      "scope": ["string.quoted.double.html"],
+      "settings": { "foreground": "#95c1e2" }
+    },
+    {
+      "name": "HTML tag",
+      "scope": ["entity.name.tag.html", "entity.name.tag.tsx"],
+      "settings": { "foreground": "#2CAAA0" }
     },
     {
       "name": "CSS Classes",
