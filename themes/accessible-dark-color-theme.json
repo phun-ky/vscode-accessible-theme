@@ -1,6 +1,7 @@
 {
   "name": "Accessible (AA) Dark",
   "$schema": "vscode://schemas/color-theme",
+  "semanticHighlighting": true,
   "type": "dark",
   "colors": {
     "editor.background": "#262831",
@@ -331,10 +332,19 @@
         "entity.name",
         "support.type",
         "support.class",
-        "support.type.sys-types",
-        "entity.name.type"
+        "support.type.sys-types"
       ],
       "settings": { "foreground": "#E4E4E7" }
+    },
+    {
+      "name": "TS Support Type",
+      "scope": ["support.type", "entity.name.type.ts"],
+      "settings": { "foreground": "#C79500" }
+    },
+    {
+      "name": "TS Types and Interfaces",
+      "scope": ["entity.name.type", "entity.other.inherited-class.ts"],
+      "settings": { "foreground": "#FF6666" }
     },
     {
       "name": "Object Method",
