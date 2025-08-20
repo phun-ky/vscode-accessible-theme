@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.9](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.8...1.0.9) (2025-08-20)
+
+### Bug
+
+* 🐛 Semantic ([338525d](https://github.com/phun-ky/vscode-accessible-theme/commit/338525d19069b0b91df23c39b27f187447dcd8c7))
+
 ## [1.0.8](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.7...1.0.8) (2025-08-20)
 
 ### Bug
