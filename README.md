@@ -1,7 +1,9 @@
 # Accessible (AA) Theme<!-- omit from toc -->
 
-A pair of **accessible, high-contrast VS Code themes** designed for readability, clarity, and reduced eye strain.  
-This theme family includes both **Dark** and **Light** variants, tuned for **WCAG AA accessibility**. Based on the article [Accessible syntax highlight theme](https://phun-ky.net/2023/10/06/accessible-syntax-highlight-theme).
+A pair of **accessible, high-contrast VS Code themes** designed for readability,
+clarity, and reduced eye strain. This theme family includes both **Dark** and
+**Light** variants, tuned for **WCAG AA accessibility**. Based on the article
+[Accessible syntax highlight theme](https://phun-ky.net/2023/10/06/accessible-syntax-highlight-theme).
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com)
@@ -37,6 +39,8 @@ This theme family includes both **Dark** and **Light** variants, tuned for **WCA
 - WCAG AA contrast ratio for editor and UI elements
 - Bracket pair highlighting colors optimized for quick scanning
 
+![Screenshot of vscode with light theme](./public/light.png)
+
 ## Palette
 
 Core colors used across both dark and light variants:
@@ -58,7 +62,9 @@ Core colors used across both dark and light variants:
 | Black            | `#000000` | 19.4:1  | AAA         | AAA        |
 | Rebellion Red    | `#CD0404` | 5.36:1  | AA          | AAA        |
 
-![Screenshot of vscode with light theme](./public/light.png)
+![Screenshot of the dark colors](./public/colors-dark.png)
+
+![Screenshot of the light colors](./public/colors-light.png)
 
 ## Installation
 
@@ -70,7 +76,8 @@ Core colors used across both dark and light variants:
 
 ## Usage
 
-Once installed, open the **Command Palette** (`Ctrl+Shift+P` / `⌘+Shift+P`) and run: `Preferences: Color Theme`
+Once installed, open the **Command Palette** (`Ctrl+Shift+P` / `⌘+Shift+P`) and
+run: `Preferences: Color Theme`
 
 Select **Accessible (AA) Dark** or **Accessible (AA) Light**.
 
@@ -91,14 +98,14 @@ and
 ## License
 
 This project is licensed under the MIT License - see the
-[LICENSE](https://github.com/phun-ky/vscode-accessible-theme/blob/main/LICENSE) file for
-details.
+[LICENSE](https://github.com/phun-ky/vscode-accessible-theme/blob/main/LICENSE)
+file for details.
 
 ## Changelog
 
 See the
-[CHANGELOG.md](https://github.com/phun-ky/vscode-accessible-theme/blob/main/CHANGELOG.md) for
-details on the latest updates.
+[CHANGELOG.md](https://github.com/phun-ky/vscode-accessible-theme/blob/main/CHANGELOG.md)
+for details on the latest updates.
 
 ## Sponsor me
 

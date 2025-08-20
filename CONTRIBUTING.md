@@ -46,15 +46,16 @@ unacceptable behaviour to <code-of-conduct@phun-ky.net>.
 > [Documentation](https://github.com/phun-ky/vscode-accessible-theme).
 
 Before you ask a question, it is best to search for existing
-[Issues](https://github.com/phun-ky/vscode-accessible-theme/issues) that might help you. In case
-you have found a suitable issue and still need clarification, you can write your
-question in this issue. It is also advisable to search the internet for answers
-first.
+[Issues](https://github.com/phun-ky/vscode-accessible-theme/issues) that might
+help you. In case you have found a suitable issue and still need clarification,
+you can write your question in this issue. It is also advisable to search the
+internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we
 recommend the following:
 
-- Open an [Issue](https://github.com/phun-ky/vscode-accessible-theme/issues/new).
+- Open an
+  [Issue](https://github.com/phun-ky/vscode-accessible-theme/issues/new).
 - Provide as much context as you can about what you're running into.
 - Provide project and platform versions (nodejs, npm, etc), depending on what
   seems relevant.
@@ -81,8 +82,9 @@ steps in advance to help us fix any potential bug as fast as possible.
 - Make sure that you are using the latest version.
 - Determine if your bug is really a bug and not an error on your side e.g. using
   incompatible environment components/versions (Make sure that you have read the
-  [documentation](https://github.com/phun-ky/vscode-accessible-theme). If you are looking for
-  support, you might want to check [this section](#i-have-a-question)).
+  [documentation](https://github.com/phun-ky/vscode-accessible-theme). If you
+  are looking for support, you might want to check
+  [this section](#i-have-a-question)).
 - To see if other users have experienced (and potentially already solved) the
   same issue you are having, check if there is not already a bug report existing
   for your bug or error in the
@@ -102,16 +104,18 @@ steps in advance to help us fix any potential bug as fast as possible.
 
 > You must never report security related issues, vulnerabilities or bugs
 > including sensitive information to the issue tracker, or elsewhere in public.
-> Instead sensitive bugs must be sent by email to <vscode-accessible-theme@phun-ky.net>.
+> Instead sensitive bugs must be sent by email to
+> <vscode-accessible-theme@phun-ky.net>.
 
 <!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the
 project:
 
-- Open an [Issue](https://github.com/phun-ky/vscode-accessible-theme/issues/new). (Since we
-  can't be sure at this point whether it is a bug or not, we ask you not to talk
-  about a bug yet and not to label the issue.)
+- Open an
+  [Issue](https://github.com/phun-ky/vscode-accessible-theme/issues/new). (Since
+  we can't be sure at this point whether it is a bug or not, we ask you not to
+  talk about a bug yet and not to label the issue.)
 - Explain the behaviour you would expect and the actual behaviour.
 - Please provide as much context as possible and describe the _reproduction
   steps_ that someone else can follow to recreate the issue on their own. This
@@ -134,19 +138,20 @@ Once it's filed:
 ### Suggesting Enhancements
 
 This section guides you through submitting an enhancement suggestion for
-Accessible (AA) Theme, **including completely new features and minor improvements to
-existing functionality**. Following these guidelines will help maintainers and
-the community to understand your suggestion and find related suggestions.
+Accessible (AA) Theme, **including completely new features and minor
+improvements to existing functionality**. Following these guidelines will help
+maintainers and the community to understand your suggestion and find related
+suggestions.
 
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation](https://github.com/phun-ky/vscode-accessible-theme) carefully and
-  find out if the functionality is already covered, maybe by an individual
-  configuration.
-- Perform a [search](https://github.com/phun-ky/vscode-accessible-theme/issues) to see if the
-  enhancement has already been suggested. If it has, add a comment to the
-  existing issue instead of opening a new one.
+- Read the [documentation](https://github.com/phun-ky/vscode-accessible-theme)
+  carefully and find out if the functionality is already covered, maybe by an
+  individual configuration.
+- Perform a [search](https://github.com/phun-ky/vscode-accessible-theme/issues)
+  to see if the enhancement has already been suggested. If it has, add a comment
+  to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's
   up to you to make a strong case to convince the project's developers of the
   merits of this feature. Keep in mind that we want features that will be useful
@@ -170,9 +175,9 @@ Enhancement suggestions are tracked as
   to. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on
   macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast)
   or [this tool](https://github.com/GNOME/byzanz) on Linux.
-- **Explain why this enhancement would be useful** to most Accessible (AA) Theme users.
-  You may also want to point out the other projects that solved it better and
-  which could serve as inspiration.
+- **Explain why this enhancement would be useful** to most Accessible (AA) Theme
+  users. You may also want to point out the other projects that solved it better
+  and which could serve as inspiration.
 
 ## Attribution
 
