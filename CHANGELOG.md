@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.6](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.5...1.0.6) (2025-08-20)
+
+### Tasks
+
+* 🤖 Update `eslint.config.mjs` ([674e673](https://github.com/phun-ky/vscode-accessible-theme/commit/674e673bd648c17d1eb41d2ca5d41525e03de540))
+
+### Documentation
+
+* ✏️ Add screenshots of the colors ([180753e](https://github.com/phun-ky/vscode-accessible-theme/commit/180753e6f7acf00cbcc6221de3b3a27d00113794))
+
+### Refactoring
+
+* 💡 Adjust colors for consts ([8f45676](https://github.com/phun-ky/vscode-accessible-theme/commit/8f456760275d8497f6213a69259d321a808b9097))
+
 ## [1.0.5](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.4...1.0.5) (2025-08-19)
 
 ### Tasks
