@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.8](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.7...1.0.8) (2025-08-20)
+
+### Bug
+
+* 🐛 Adjust tsx colors ([894d0a9](https://github.com/phun-ky/vscode-accessible-theme/commit/894d0a9fa8760e2989ce8780d003c6ac046b9d0d))
+
 ## [1.0.7](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.6...1.0.7) (2025-08-20)
 
 ### Bug
