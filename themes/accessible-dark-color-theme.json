@@ -183,7 +183,11 @@
     },
     {
       "name": "Storage type TS",
-      "scope": ["storage.type.ts", "support.variable.property.ts"],
+      "scope": [
+        "storage.type.ts",
+        "support.variable.property.ts",
+        "keyword.control.flow.ts"
+      ],
       "settings": { "foreground": "#95c1e2" }
     },
 
@@ -209,6 +213,11 @@
         "punctuation.section.parens.begin",
         "punctuation.section.parens.end"
       ],
+      "settings": { "foreground": "#C79500" }
+    },
+    {
+      "name": "Constants TS",
+      "scope": ["variable.other.constant.ts"],
       "settings": { "foreground": "#C79500" }
     },
     {
