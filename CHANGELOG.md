@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.10](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.9...1.0.10) (2025-08-20)
+
+### Bug
+
+* 🐛 Adjust light colors ([0186d62](https://github.com/phun-ky/vscode-accessible-theme/commit/0186d6294071eecc44bbe843c6245e949ea446aa))
+
 ## [1.0.9](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.8...1.0.9) (2025-08-20)
 
 ### Bug
