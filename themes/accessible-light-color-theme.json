@@ -19,15 +19,15 @@
     "focusBorder": "#1D699F",
     "selection.background": "#1D699F22",
 
-    "activityBar.background": "#d8dcdf",
+    "activityBar.background": "#E6E8EA",
     "activityBar.foreground": "#566D71",
     "activityBar.inactiveForeground": "#5C6A6A",
     "activityBar.border": "#d8dcdf",
     "activityBarBadge.background": "#1D699F",
-    "activityBarBadge.foreground": "#030303",
+    "activityBarBadge.foreground": "#faf9f7",
 
     "sideBar.background": "#f0f1f3",
-    "sideBar.foreground": "#566D71",
+    "sideBar.foreground": "#475252",
     "sideBar.border": "#1D699F",
     "sideBarTitle.foreground": "#566D71",
     "sideBarSectionHeader.background": "#F4F5F5",
@@ -55,21 +55,21 @@
     "panelTitle.inactiveForeground": "#5C6A6A",
     "panelTitle.activeBorder": "#1D699F",
 
-    "list.activeSelectionBackground": "#303445",
+    "list.activeSelectionBackground": "#d8dcdf",
     "list.activeSelectionForeground": "#566D71",
-    "list.hoverBackground": "#8e9ca4",
+    "list.hoverBackground": "#1D699F22",
     "list.hoverForeground": "#566D71",
     "list.focusBackground": "#303445",
     "list.focusForeground": "#566D71",
-    "list.inactiveSelectionBackground": "#8e9ca4",
+    "list.inactiveSelectionBackground": "#d8dcdf",
     "list.inactiveSelectionForeground": "#566D71",
 
-    "input.background": "#8e9ca4",
+    "input.background": "#cad1d3",
     "input.foreground": "#566D71",
     "input.border": "#303445",
     "input.placeholderForeground": "#5C6A6A",
-    "dropdown.background": "#8e9ca4",
-    "dropdown.listBackground": "#8e9ca4",
+    "dropdown.background": "#cad1d3",
+    "dropdown.listBackground": "#cad1d3",
     "dropdown.border": "#303445",
 
     "button.background": "#1D699F",
@@ -78,7 +78,7 @@
     "checkbox.foreground": "#566D71",
 
     "badge.background": "#1D699F",
-    "badge.foreground": "#030303",
+    "badge.foreground": "#faf9f7",
     "progressBar.background": "#1D699F",
 
     "notificationCenterHeader.background": "#F5F6F7",
@@ -87,18 +87,18 @@
     "notifications.border": "#303445",
     "quickInput.background": "#F5F6F7",
     "quickInput.foreground": "#566D71",
-    "quickInputList.focusBackground": "#303445",
+    "quickInputList.focusBackground": "#1D699F22",
 
     "scrollbarSlider.background": "#5C6A6A44",
     "scrollbarSlider.hoverBackground": "#5C6A6A66",
     "scrollbarSlider.activeBackground": "#5C6A6A88",
 
     "peekView.border": "#1D699F",
-    "peekViewEditor.background": "#8e9ca4",
+    "peekViewEditor.background": "#F5F6F7",
     "peekViewResult.background": "#F5F6F7",
-    "editorHoverWidget.background": "#8e9ca4",
+    "editorHoverWidget.background": "#faf9f7",
     "editorHoverWidget.border": "#303445",
-    "editorWidget.background": "#8e9ca4",
+    "editorWidget.background": "#F5F6F7",
     "editorWidget.border": "#303445",
 
     "gitDecoration.addedResourceForeground": "#1E766D",
@@ -130,25 +130,25 @@
     "statusBar.border": "#303445",
 
     "statusBar.noFolderBackground": "#8e9ca4",
-    "statusBar.noFolderForeground": "#0D0D0D",
+    "statusBar.noFolderForeground": "#030303",
 
     "statusBar.debuggingBackground": "#806200",
-    "statusBar.debuggingForeground": "#0D0D0D",
+    "statusBar.debuggingForeground": "#030303",
 
-    "statusBarItem.hoverBackground": "#303445",
+    "statusBarItem.hoverBackground": "#1D699F22",
     "statusBarItem.activeBackground": "#8e9ca4",
 
     "statusBarItem.remoteBackground": "#8e9ca4",
-    "statusBarItem.remoteForeground": "#0D0D0D",
+    "statusBarItem.remoteForeground": "#1D699F22",
 
     "statusBarItem.prominentBackground": "#8e9ca4",
-    "statusBarItem.prominentForeground": "#0D0D0D",
-    "statusBarItem.prominentHoverBackground": "#0D0D0D",
+    "statusBarItem.prominentForeground": "#030303",
+    "statusBarItem.prominentHoverBackground": "#1D699F22",
 
     "statusBarItem.errorBackground": "#C92243",
     "statusBarItem.errorForeground": "#030303",
     "statusBarItem.warningBackground": "#806200",
-    "statusBarItem.warningForeground": "#0D0D0D"
+    "statusBarItem.warningForeground": "#1D699F22"
   },
   "tokenColors": [
     {
