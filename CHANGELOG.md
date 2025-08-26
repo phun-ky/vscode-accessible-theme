@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.11](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.10...1.0.11) (2025-08-26)
+
+### Tasks
+
+* 🤖 bump eslint from 9.33.0 to 9.34.0 in the minor-and-patch group ([c04d65b](https://github.com/phun-ky/vscode-accessible-theme/commit/c04d65bf516acb6d0c9324b7a3dcd8b963ba9fe0))
+
 ## [1.0.10](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.9...1.0.10) (2025-08-20)
 
 ### Bug
