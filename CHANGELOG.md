@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.12](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.11...1.0.12) (2025-09-01)
+
+### Tasks
+
+* 🤖 bump eslint-config-phun-ky in the minor-and-patch group ([d89d047](https://github.com/phun-ky/vscode-accessible-theme/commit/d89d0470b973610aed392ef3d45f2d3aa75cbe37))
+
 ## [1.0.11](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.10...1.0.11) (2025-08-26)
 
 ### Tasks
