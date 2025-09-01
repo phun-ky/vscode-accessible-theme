@@ -38,7 +38,7 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.0",
     "eslint": "^9.34.0",
-    "eslint-config-phun-ky": "^1.0.0",
+    "eslint-config-phun-ky": "^1.0.15",
     "git-cz": "^4.9.0",
     "prettier": "3.6.2",
     "release-it": "^19.0.1"
