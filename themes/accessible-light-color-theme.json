@@ -57,10 +57,10 @@
 
     "list.activeSelectionBackground": "#d8dcdf",
     "list.activeSelectionForeground": "#303445",
-    "list.hoverBackground": "#1D699F22",
+    "list.hoverBackground": "#1d699f22",
     "list.hoverForeground": "#303445",
     "list.focusBackground": "#303445",
-    "list.focusForeground": "#566D71",
+    "list.focusForeground": "#F5F6F7",
     "list.inactiveSelectionBackground": "#d8dcdf",
     "list.inactiveSelectionForeground": "#566D71",
 
@@ -87,7 +87,8 @@
     "notifications.border": "#303445",
     "quickInput.background": "#F5F6F7",
     "quickInput.foreground": "#566D71",
-    "quickInputList.focusBackground": "#303445",
+    "quickInputList.focusBackground": "#d8dcdf",
+    "quickInputList.focusForeground": "#303445",
 
     "scrollbarSlider.background": "#5C6A6A44",
     "scrollbarSlider.hoverBackground": "#5C6A6A66",
