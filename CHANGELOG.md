@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.14](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.13...1.0.14) (2025-09-05)
+
+### Bug
+
+* 🐛 Adjust color for `quickInputList` ([940266b](https://github.com/phun-ky/vscode-accessible-theme/commit/940266b521847e56cb2e0e8e570454ca94e57d63))
+
 ## [1.0.13](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.12...1.0.13) (2025-09-05)
 
 ### Bug
