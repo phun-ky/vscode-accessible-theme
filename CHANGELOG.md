@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.13](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.12...1.0.13) (2025-09-05)
+
+### Bug
+
+* 🐛 Adjusted colors ([cb23bfc](https://github.com/phun-ky/vscode-accessible-theme/commit/cb23bfca092d41b0e9d5972bc66f0bf7bb7d4916))
+
 ## [1.0.12](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.11...1.0.12) (2025-09-01)
 
 ### Tasks
