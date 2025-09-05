@@ -24,7 +24,7 @@
     "activityBar.inactiveForeground": "#5C6A6A",
     "activityBar.border": "#d8dcdf",
     "activityBarBadge.background": "#1D699F",
-    "activityBarBadge.foreground": "#030303",
+    "activityBarBadge.foreground": "#F5F6F7",
 
     "sideBar.background": "#f0f1f3",
     "sideBar.foreground": "#566D71",
@@ -55,30 +55,30 @@
     "panelTitle.inactiveForeground": "#5C6A6A",
     "panelTitle.activeBorder": "#1D699F",
 
-    "list.activeSelectionBackground": "#303445",
-    "list.activeSelectionForeground": "#566D71",
-    "list.hoverBackground": "#8e9ca4",
-    "list.hoverForeground": "#566D71",
+    "list.activeSelectionBackground": "#d8dcdf",
+    "list.activeSelectionForeground": "#303445",
+    "list.hoverBackground": "#1D699F22",
+    "list.hoverForeground": "#303445",
     "list.focusBackground": "#303445",
     "list.focusForeground": "#566D71",
-    "list.inactiveSelectionBackground": "#8e9ca4",
+    "list.inactiveSelectionBackground": "#d8dcdf",
     "list.inactiveSelectionForeground": "#566D71",
 
-    "input.background": "#8e9ca4",
+    "input.background": "#d8dcdf",
     "input.foreground": "#566D71",
     "input.border": "#303445",
     "input.placeholderForeground": "#5C6A6A",
-    "dropdown.background": "#8e9ca4",
-    "dropdown.listBackground": "#8e9ca4",
+    "dropdown.background": "#d8dcdf",
+    "dropdown.listBackground": "#d8dcdf",
     "dropdown.border": "#303445",
 
     "button.background": "#1D699F",
-    "button.foreground": "#030303",
+    "button.foreground": "#F5F6F7",
     "button.hoverBackground": "#63abe3",
     "checkbox.foreground": "#566D71",
 
     "badge.background": "#1D699F",
-    "badge.foreground": "#030303",
+    "badge.foreground": "#F5F6F7",
     "progressBar.background": "#1D699F",
 
     "notificationCenterHeader.background": "#F5F6F7",
@@ -94,11 +94,11 @@
     "scrollbarSlider.activeBackground": "#5C6A6A88",
 
     "peekView.border": "#1D699F",
-    "peekViewEditor.background": "#8e9ca4",
+    "peekViewEditor.background": "#d8dcdf",
     "peekViewResult.background": "#F5F6F7",
-    "editorHoverWidget.background": "#8e9ca4",
+    "editorHoverWidget.background": "#d9e4ec",
     "editorHoverWidget.border": "#303445",
-    "editorWidget.background": "#8e9ca4",
+    "editorWidget.background": "#d8dcdf",
     "editorWidget.border": "#303445",
 
     "gitDecoration.addedResourceForeground": "#1E766D",
@@ -129,19 +129,19 @@
     "statusBar.foreground": "#566D71",
     "statusBar.border": "#303445",
 
-    "statusBar.noFolderBackground": "#8e9ca4",
+    "statusBar.noFolderBackground": "#d8dcdf",
     "statusBar.noFolderForeground": "#0D0D0D",
 
     "statusBar.debuggingBackground": "#806200",
     "statusBar.debuggingForeground": "#0D0D0D",
 
-    "statusBarItem.hoverBackground": "#303445",
-    "statusBarItem.activeBackground": "#8e9ca4",
+    "statusBarItem.hoverBackground": "#d8dcdf",
+    "statusBarItem.activeBackground": "#d8dcdf",
 
-    "statusBarItem.remoteBackground": "#8e9ca4",
+    "statusBarItem.remoteBackground": "#d8dcdf",
     "statusBarItem.remoteForeground": "#0D0D0D",
 
-    "statusBarItem.prominentBackground": "#8e9ca4",
+    "statusBarItem.prominentBackground": "#d8dcdf",
     "statusBarItem.prominentForeground": "#0D0D0D",
     "statusBarItem.prominentHoverBackground": "#0D0D0D",
 
