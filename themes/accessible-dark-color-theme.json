@@ -364,7 +364,11 @@
     },
     {
       "name": "TS Types and Interfaces",
-      "scope": ["entity.name.type", "entity.other.inherited-class.ts"],
+      "scope": [
+        "entity.name.type",
+        "entity.other.inherited-class.ts",
+        "entity.name.type.module.ts"
+      ],
       "settings": { "foreground": "#FF6666" }
     },
     {
