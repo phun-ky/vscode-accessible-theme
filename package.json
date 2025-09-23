@@ -37,11 +37,11 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.0",
-    "eslint": "^9.34.0",
-    "eslint-config-phun-ky": "^1.0.15",
+    "eslint": "^9.36.0",
+    "eslint-config-phun-ky": "^1.0.18",
     "git-cz": "^4.9.0",
     "prettier": "3.6.2",
-    "release-it": "^19.0.1"
+    "release-it": "^19.0.5"
   },
   "engines": {
     "vscode": ">=1.70.0"
