@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.18](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.17...1.0.18) (2025-10-20)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group with 2 updates ([95d9678](https://github.com/phun-ky/vscode-accessible-theme/commit/95d9678a278de696a71fdf999d404f9781c83e22))
+* 🤖 Fix release ([9111cda](https://github.com/phun-ky/vscode-accessible-theme/commit/9111cdabc42c42e69f9c444163fea86915000692))
+* 🤖 Reinstall with a clean `package-lock.json` ([4340f35](https://github.com/phun-ky/vscode-accessible-theme/commit/4340f356156f732155e8d6aa82e69693561ab0a9)), closes [#19](https://github.com/phun-ky/vscode-accessible-theme/issues/19)
+
 ## [1.0.17](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.16...1.0.17) (2025-10-14)
 
 ### Tasks
