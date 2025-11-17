@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.20](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.19...1.0.20) (2025-11-17)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group with 3 updates ([3cc71f5](https://github.com/phun-ky/vscode-accessible-theme/commit/3cc71f56e259cc255d3804db2e6173ad85d50752))
+
 ## [1.0.19](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.18...1.0.19) (2025-11-03)
 
 ### Tasks
