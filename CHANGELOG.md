@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.0.22](///compare/1.0.21...1.0.22) (2025-11-25)
+
 ## [1.0.21](///compare/1.0.20...1.0.21) (2025-11-25)
 
 ## [1.0.20](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.19...1.0.20) (2025-11-17)
