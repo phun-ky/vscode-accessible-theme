@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.26](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.25...1.0.26) (2026-01-25)
+
+### Tasks
+
+* 🤖 bump lodash from 4.17.21 to 4.17.23 ([b4cd99a](https://github.com/phun-ky/vscode-accessible-theme/commit/b4cd99a00af3ef470d590ef1777a15556d9fecda))
+
 ## [1.0.25](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.24...1.0.25) (2026-01-21)
 
 ### Tasks
