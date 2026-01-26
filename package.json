@@ -38,10 +38,10 @@
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.4",
     "eslint": "^9.39.2",
-    "eslint-config-phun-ky": "^1.0.31",
+    "eslint-config-phun-ky": "^1.0.32",
     "git-cz": "^4.9.0",
-    "prettier": "3.8.0",
-    "release-it": "^19.2.3"
+    "prettier": "3.8.1",
+    "release-it": "^19.2.4"
   },
   "engines": {
     "vscode": ">=1.70.0"
