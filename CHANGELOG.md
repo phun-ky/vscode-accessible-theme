@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.28](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.27...1.0.28) (2026-02-10)
+
+### Tasks
+
+* 🤖 bump the minor-and-patch group across 1 directory with 2 updates ([7c09972](https://github.com/phun-ky/vscode-accessible-theme/commit/7c099729668c09b6585060424d028757be255de0))
+
 ## [1.0.27](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.26...1.0.27) (2026-01-27)
 
 ### Tasks
