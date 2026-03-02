@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.29](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.28...1.0.29) (2026-03-02)
+
+### Tasks
+
+* 🤖 bump minimatch from 3.1.2 to 3.1.5 ([b79c0c9](https://github.com/phun-ky/vscode-accessible-theme/commit/b79c0c92c0372c04ed1314d48fd1e8415f2532b2))
+
 ## [1.0.28](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.27...1.0.28) (2026-02-10)
 
 ### Tasks
