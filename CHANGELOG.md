@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.30](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.29...1.0.30) (2026-03-02)
+
+### Tasks
+
+* 🤖 bump basic-ftp from 5.0.5 to 5.2.0 ([e5e6178](https://github.com/phun-ky/vscode-accessible-theme/commit/e5e6178f34f3411b4957abadb2045b92bc4095c0))
+
 ## [1.0.29](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.28...1.0.29) (2026-03-02)
 
 ### Tasks
