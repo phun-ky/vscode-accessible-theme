@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.32](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.31...1.0.32) (2026-03-26)
+
+### Tasks
+
+* 🤖 bump picomatch ([405f06c](https://github.com/phun-ky/vscode-accessible-theme/commit/405f06cb662cbe175ea4c98922b8779c6f33073f))
+
 ## [1.0.31](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.30...1.0.31) (2026-03-17)
 
 ### Tasks
