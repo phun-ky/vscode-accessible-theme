@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.33](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.32...1.0.33) (2026-03-27)
+
+### Tasks
+
+* 🤖 bump flatted from 3.3.3 to 3.4.2 ([2e3c639](https://github.com/phun-ky/vscode-accessible-theme/commit/2e3c63956ae5096e509e6ef10ba36d682a728071))
+
 ## [1.0.32](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.31...1.0.32) (2026-03-26)
 
 ### Tasks
