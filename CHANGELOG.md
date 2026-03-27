@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.34](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.33...1.0.34) (2026-03-27)
+
+### Tasks
+
+* 🤖 bump handlebars from 4.7.8 to 4.7.9 ([3d6395e](https://github.com/phun-ky/vscode-accessible-theme/commit/3d6395e3d6242491857d77df5430fe9cbc191314))
+
 ## [1.0.33](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.32...1.0.33) (2026-03-27)
 
 ### Tasks
