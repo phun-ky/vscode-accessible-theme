@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.36](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.35...1.0.36) (2026-04-14)
+
+### Tasks
+
+* 🤖 bump defu from 6.1.4 to 6.1.7 ([b4bbb1b](https://github.com/phun-ky/vscode-accessible-theme/commit/b4bbb1bf5cc562675be770c1bcc2bf9ce5fd5ba0))
+
 ## [1.0.35](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.34...1.0.35) (2026-04-14)
 
 ### Tasks
