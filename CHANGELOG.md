@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.38](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.37...1.0.38) (2026-04-21)
+
+### Tasks
+
+* 🤖 bump prettier from 3.8.1 to 3.8.3 in the minor-and-patch group ([e626748](https://github.com/phun-ky/vscode-accessible-theme/commit/e62674882f0d4ab57a490cf459df1ea19e5989e4))
+
 ## [1.0.37](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.36...1.0.37) (2026-04-14)
 
 ### Tasks
