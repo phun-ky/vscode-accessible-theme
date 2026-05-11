@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.40](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.39...1.0.40) (2026-05-11)
+
+### Tasks
+
+* 🤖 bump ip-address from 10.1.0 to 10.2.0 ([70f57e8](https://github.com/phun-ky/vscode-accessible-theme/commit/70f57e860b6eeff633299e8aa62e5275cfbdb12a))
+
 ## [1.0.39](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.38...1.0.39) (2026-05-04)
 
 ### Tasks
