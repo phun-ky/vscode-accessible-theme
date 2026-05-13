@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.41](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.40...1.0.41) (2026-05-13)
+
+### Tasks
+
+* 🤖 bump eslint-config-phun-ky in the major-updates group ([d84a5e0](https://github.com/phun-ky/vscode-accessible-theme/commit/d84a5e068784d5d66d9fde1d26d036453e65bad7))
+* 🤖 Update tooling chain ([1c43a8e](https://github.com/phun-ky/vscode-accessible-theme/commit/1c43a8efc68b67a5315f99fdaa0e54c8cac9d7f6))
+
 ## [1.0.40](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.39...1.0.40) (2026-05-11)
 
 ### Tasks
