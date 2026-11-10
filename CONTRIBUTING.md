@@ -290,7 +290,7 @@ To add or change a colour:
    lighter shade until it passes.
 3. If the colour is new for code, add a row for it to the theme's palette table
    in the README. The name is the nearest match in
-   [color-name-list](https://github.com/meodai/color-name-list), and `npm test`
+   [color-name-list](https://github.com/meodai/color-names), and `npm test`
    reports the ratio and levels the row must show.
 4. If a new UI foreground key has no background named after it, `npm test` says
    so: map it to its background in `test/ui-pairs.mjs`, or add it to `SKIPPED`
