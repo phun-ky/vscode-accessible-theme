@@ -108,7 +108,7 @@
     "gitDecoration.untrackedResourceForeground": "#2CAAA0",
     "gitDecoration.conflictingResourceForeground": "#C79500",
 
-    "terminal.ansiBlack": "#262831",
+    "terminal.ansiBlack": "#8C9B9B",
     "terminal.ansiBrightBlack": "#8C9B9B",
     "terminal.ansiRed": "#FF6666",
     "terminal.ansiGreen": "#2CAAA0",
