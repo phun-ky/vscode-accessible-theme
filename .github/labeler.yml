@@ -19,6 +19,7 @@
           - '.vscode/**'
           - 'eslint.config.mjs'
           - '.githooks/**'
+          - 'scripts/**'
 'experience: visual':
   - changed-files:
       - any-glob-to-any-file:
