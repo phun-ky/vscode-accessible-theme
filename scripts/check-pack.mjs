@@ -1,6 +1,7 @@
 // Checks the packaged extension (.vsix) before it is published: exactly the
 // expected files, a manifest that matches package.json, themes that parse and
-// match their contribution, and README images that will load.
+// match their contribution, a CHANGELOG that includes this version, and README
+// images that will load.
 //
 // Usage: node scripts/check-pack.mjs <file.vsix>
 
@@ -152,6 +153,17 @@ for (const { label, path: themePath, uiTheme } of themes) {
     `${label}: has colors (${Object.keys(theme.colors ?? {}).length}) and tokenColors (${(theme.tokenColors ?? []).length})`
   );
 }
+
+// The Changelog tab shows the packaged CHANGELOG, so its newest entry must be
+// the version being installed: "## [1.0.47](...)", or "# [1.1.0](...)" for a
+// minor or major release
+const changelog = entries.get('extension/changelog.md')?.toString() ?? '';
+const newest = changelog.match(/^#{1,3} \[?(\d+\.\d+\.\d+[^\]\s]*)/m)?.[1];
+
+check(
+  newest === local.version,
+  `the packaged CHANGELOG's newest entry is ${newest}, package.json has ${local.version}`
+);
 
 // vsce rewrites relative image links to GitHub URLs; a relative one left over
 // would show as a broken image on the Marketplace

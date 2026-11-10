@@ -13,7 +13,7 @@
     "skipChecks": true
   },
   "hooks": {
-    "after:bump": "npm run package && npm run check:pack",
+    "before:release": "npm run package && npm run check:pack",
     "before:git:release": "npm run publish:marketplace && npm run publish:openvsx",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
