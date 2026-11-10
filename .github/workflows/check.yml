@@ -19,6 +19,7 @@ on:
       - '.prettierrc'
       - '.prettierignore'
       - '.vscodeignore'
+      - 'scripts/**'
   workflow_dispatch:
 
 permissions:
@@ -42,6 +43,10 @@ jobs:
         run: npm run style:lint
       - name: Check the format of JSON and YAML files # Also fails on invalid theme JSON
         run: npm run style:format-check
+      - name: Package the extension
+        run: npm run package
+      - name: Check the package # Exact file list, manifest, themes, README images
+        run: npm run check:pack
 
   notify:
     name: Notify failed check

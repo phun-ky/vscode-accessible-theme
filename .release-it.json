@@ -5,13 +5,16 @@
   },
   "github": {
     "release": true,
-    "tokenRef": "GH_TOKEN"
+    "tokenRef": "GH_TOKEN",
+    "assets": ["vscode-accessible-theme.vsix"]
   },
   "npm": {
     "publish": false,
     "skipChecks": true
   },
   "hooks": {
+    "after:bump": "npm run package && npm run check:pack",
+    "before:git:release": "npm run publish:marketplace && npm run publish:openvsx",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
   "plugins": {
