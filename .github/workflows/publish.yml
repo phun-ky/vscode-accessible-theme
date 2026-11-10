@@ -39,7 +39,8 @@ jobs:
     environment: marketplace
     permissions:
       contents: read # Release commits, tags and GitHub releases use GH_TOKEN
-      id-token: write # Marketplace and Open VSX trusted publishing (OIDC)
+      id-token: write # Trusted publishing (OIDC) and signing the attestation
+      attestations: write # The build provenance attestation of the .vsix
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -59,20 +60,38 @@ jobs:
         if: steps.guard.outputs.release == 'true'
         run: npm audit --omit=dev --audit-level=high
       - name: Release
-        # release-it bumps the version and changelog, packages and checks the
-        # .vsix (after:bump), publishes it to the Marketplace and Open VSX
-        # (before:git:release), then pushes the release commit and tag and
-        # creates the GitHub release with the .vsix attached
+        # release-it bumps the version and writes the changelog, packages and
+        # checks the .vsix (before:release), publishes it to the Marketplace
+        # and Open VSX (before:git:release), then pushes the release commit and
+        # tag and creates the GitHub release with the .vsix attached.
+        # --verbose puts the hooks' output (vsce, ovsx, check:pack) in the log
         if: steps.guard.outputs.release == 'true'
         run: |
           git config user.name "$ACTOR"
           git config user.email "$ACTOR@users.noreply.github.com"
-          npm run release
+          npm run release -- --verbose
         env:
           ACTOR: ${{ github.actor }} # via env, never interpolated into the script
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           # Set to true once Open VSX trusted publishing is registered
           OPENVSX_PUBLISH: ${{ vars.OPENVSX_PUBLISH }}
+      - name: Attest the published .vsix
+        # Sigstore-signed build provenance for the same file release-it
+        # published; verify with gh attestation verify (see SECURITY.md)
+        if: steps.guard.outputs.release == 'true'
+        id: attest
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: vscode-accessible-theme.vsix
+      - name: Attach the attestation to the GitHub release
+        if: steps.guard.outputs.release == 'true'
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          cp "$BUNDLE" vscode-accessible-theme.vsix.sigstore.json
+          gh release upload "$version" vscode-accessible-theme.vsix.sigstore.json
+        env:
+          BUNDLE: ${{ steps.attest.outputs.bundle-path }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
   notify:
     name: Notify failed build

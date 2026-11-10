@@ -71,6 +71,16 @@ repository:
         comment: |
           GitHub releases, each with the same .vsix attached and its SHA-256
           digest shown.
+    attestations:
+      - name: Build provenance
+        predicate-uri: https://slsa.dev/provenance/v1
+        location: https://github.com/phun-ky/vscode-accessible-theme/attestations
+        comment: |
+          From the first release after 1.0.47, the publish workflow signs a
+          build provenance attestation for the .vsix with Sigstore and
+          attaches it to the GitHub release as
+          vscode-accessible-theme.vsix.sigstore.json. Verify with gh
+          attestation verify; see SECURITY.md.
   security:
     assessments:
       self:

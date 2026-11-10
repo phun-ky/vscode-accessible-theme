@@ -347,11 +347,13 @@ GitHub Actions:
    themes, `package.json`, README, LICENSE or `.vscodeignore`). Other changes
    wait for the next release.
 2. If so, release-it picks the version from the commits, updates the changelog,
-   packs the extension, checks the package with `npm run check:pack`, and
-   publishes that same file to the Visual Studio Marketplace with Trusted
-   Publishing.
+   then packs the extension, so the packed CHANGELOG includes the new version,
+   checks the package with `npm run check:pack`, and publishes that same file to
+   the Visual Studio Marketplace with Trusted Publishing.
 3. The release commit and tag go to `main`, and a GitHub release is created with
    the `.vsix` attached.
+4. The workflow signs a build provenance attestation for that `.vsix` and
+   attaches it to the GitHub release.
 
 `npm run release:dry-run` shows what a merge would release.
 
