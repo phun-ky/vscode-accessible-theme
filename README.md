@@ -10,6 +10,8 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 [![SemVer 2.0](https://img.shields.io/badge/SemVer-2.0-green.svg)](http://semver.org/spec/v2.0.0.html)
 ![issues](https://img.shields.io/github/issues/phun-ky/vscode-accessible-theme)
 ![GitHub Repo stars](https://img.shields.io/github/stars/phun-ky/vscode-accessible-theme)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/16534/badge)](https://www.bestpractices.dev/projects/16534)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/phun-ky/vscode-accessible-theme/badge)](https://scorecard.dev/viewer/?uri=github.com/phun-ky/vscode-accessible-theme)
 
 ## Table of Contents<!-- omit from toc -->
 

@@ -1,0 +1,132 @@
+header:
+  schema-version: 2.2.0
+  last-updated: '2026-11-10'
+  last-reviewed: '2026-11-10'
+  url: https://raw.githubusercontent.com/phun-ky/vscode-accessible-theme/main/security-insights.yml
+  comment: |
+    Security information for the Accessible (AA) Theme VS Code extension, in
+    the OpenSSF Security Insights format. Keep it in step with SECURITY.md.
+
+project:
+  name: Accessible (AA) Theme
+  homepage: https://github.com/phun-ky/vscode-accessible-theme#readme
+  roadmap: https://github.com/phun-ky/vscode-accessible-theme/blob/main/ROADMAP.md
+  funding: https://github.com/sponsors/phun-ky
+  administrators:
+    - name: Alexander Vassbotn Røyne-Helgesen
+      social: https://github.com/phun-ky
+      primary: true
+  documentation:
+    quickstart-guide: https://github.com/phun-ky/vscode-accessible-theme/blob/main/README.md#installation
+    release-process: https://github.com/phun-ky/vscode-accessible-theme/blob/main/CONTRIBUTING.md#releases
+    code-of-conduct: https://github.com/phun-ky/vscode-accessible-theme/blob/main/CODE_OF_CONDUCT.md
+    support-policy: https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md#supported-versions
+    signature-verification: https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md#verifying-releases
+  repositories:
+    - name: vscode-accessible-theme
+      url: https://github.com/phun-ky/vscode-accessible-theme
+      comment: |
+        The source of the phun-ky.vscode-accessible-theme extension.
+  vulnerability-reporting:
+    reports-accepted: true
+    bug-bounty-available: false
+    policy: https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md
+    comment: |
+      Report privately with GitHub's private vulnerability reporting
+      (https://github.com/phun-ky/vscode-accessible-theme/security/advisories/new)
+      or by email to the contact below.
+    contact:
+      name: Accessible (AA) Theme security contact
+      email: security@phun-ky.net
+      primary: true
+
+repository:
+  url: https://github.com/phun-ky/vscode-accessible-theme
+  status: active
+  accepts-change-request: true
+  accepts-automated-change-request: true
+  no-third-party-packages: false
+  core-team:
+    - name: Alexander Vassbotn Røyne-Helgesen
+      social: https://github.com/phun-ky
+      primary: true
+  documentation:
+    contributing-guide: https://github.com/phun-ky/vscode-accessible-theme/blob/main/CONTRIBUTING.md
+    review-policy: https://github.com/phun-ky/vscode-accessible-theme/blob/main/GOVERNANCE.md#reviews
+    security-policy: https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md
+    dependency-management-policy: https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md#dependencies
+    governance: https://github.com/phun-ky/vscode-accessible-theme/blob/main/GOVERNANCE.md
+  license:
+    url: https://github.com/phun-ky/vscode-accessible-theme/blob/main/LICENSE
+    expression: MIT
+  release:
+    automated-pipeline: true
+    changelog: https://github.com/phun-ky/vscode-accessible-theme/blob/main/CHANGELOG.md
+    distribution-points:
+      - uri: https://marketplace.visualstudio.com/items?itemName=phun-ky.vscode-accessible-theme
+        comment: |
+          Visual Studio Marketplace, published by the verified publisher
+          phun-ky through Marketplace Trusted Publishing.
+      - uri: https://github.com/phun-ky/vscode-accessible-theme/releases
+        comment: |
+          GitHub releases, each with the same .vsix attached and its SHA-256
+          digest shown.
+  security:
+    assessments:
+      self:
+        evidence: https://github.com/phun-ky/vscode-accessible-theme/blob/main/ASSURANCE.md
+        date: '2026-11-10'
+        comment: |
+          The assurance case covers what is protected, the threat model,
+          trust boundaries, the secure design principles applied, the
+          common weaknesses countered and the known gaps.
+    tools:
+      - name: CodeQL
+        type: SAST
+        rulesets:
+          - default
+        integration:
+          adhoc: false
+          ci: true
+          release: false
+        results: {}
+        comment: |
+          GitHub default setup, scanning the GitHub Actions workflows and the
+          JavaScript on every push to main and every pull request.
+      - name: Dependabot
+        type: SCA
+        rulesets:
+          - default
+        integration:
+          adhoc: true
+          ci: false
+          release: false
+        results: {}
+        comment: |
+          Weekly checks of the npm development dependencies and GitHub
+          Actions, with update pull requests, and security updates for new
+          advisories.
+      - name: Dependency Review
+        type: SCA
+        rulesets:
+          - default
+        integration:
+          adhoc: false
+          ci: true
+          release: false
+        results: {}
+        comment: |
+          Fails pull requests that add a dependency with a known high or
+          critical vulnerability. npm audit gates every release the same way.
+      - name: OpenSSF Scorecard
+        type: other
+        rulesets:
+          - default
+        integration:
+          adhoc: false
+          ci: true
+          release: false
+        results: {}
+        comment: |
+          Runs on every push to main and weekly; results at
+          https://scorecard.dev/viewer/?uri=github.com/phun-ky/vscode-accessible-theme

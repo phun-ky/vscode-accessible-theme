@@ -17,7 +17,9 @@ export default defineConfig([
     },
     rules: {
       // Command-line scripts report to the terminal
-      'no-console': 'off'
+      'no-console': 'off',
+      // Node.js scripts: browser support doesn't apply
+      'compat/compat': 'off'
     }
   }
 ]);
