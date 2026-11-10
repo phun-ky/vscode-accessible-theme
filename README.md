@@ -44,39 +44,44 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 
 ## Palette
 
-Core colors used across both dark and light variants, UI colors are derived from
-these:
+The colours each theme uses for code, with their WCAG 2.x contrast against the
+editor background. Ratios are rounded down, and `npm test` checks the tables
+against the theme files.
 
 **With dark background: Sky Captain - `#262831`**:
 
 | Color            | Hex       | Ratio   | Normal Text | Large Text |
 | ---------------- | --------- | ------- | ----------- | ---------- |
-| Arona            | `#859BA3` | 5.04:1  | AA          | AAA        |
-| Vivid Amber      | `#C79500` | 5.4:1   | AA          | AAA        |
+| Bucolic Blue     | `#99ACB2` | 6.22:1  | AA          | AAA        |
+| Vivid Amber      | `#C79500` | 5.40:1  | AA          | AAA        |
 | Sea Kale         | `#2CAAA0` | 5.14:1  | AA          | AAA        |
 | Flax Flower Blue | `#469EDD` | 5.03:1  | AA          | AAA        |
 | Boredom          | `#8C9B9B` | 5.08:1  | AA          | AAA        |
 | Lilac Mist       | `#E4E4E7` | 11.57:1 | AAA         | AAA        |
 | Pompelmo         | `#FF6666` | 5.13:1  | AA          | AAA        |
+| Toile Blue       | `#95C1E2` | 7.69:1  | AAA         | AAA        |
+| Turkish Teal     | `#72C6C0` | 7.37:1  | AAA         | AAA        |
+| White            | `#FFFFFF` | 14.68:1 | AAA         | AAA        |
 
-**With dark background: Gram's Hair - `#F5F6F7`**:
+**With light background: Gram's Hair - `#F5F6F7`**:
 
-| Color           | Hex       | Ratio  | Normal Text | Large Text |
-| --------------- | --------- | ------ | ----------- | ---------- |
-| Distance        | `#566D71` | 5.07:1 | AA          | AAA        |
-| Ground Earth    | `#806200` | 5.29:1 | AA          | AAA        |
-| Advantageous    | `#1E766D` | 5.07:1 | AA          | AAA        |
-| Jazz Blue       | `#1D699F` | 5.43:1 | AA          | AAA        |
-| Windsurfing     | `#366E96` | 5.43:1 | AA          | AAA        |
-| Mountain Pass   | `#5C6A6A` | 5.21:1 | AA          | AAA        |
-| Black           | `#000000` | 19.4:1 | AAA         | AAA        |
-| Pepper Jelly    | `#C92243` | 5.11:1 | AA          | AAA        |
-| Nymph's Delight | `#78698C` | 4.62:1 | AA          | AAA        |
+| Color           | Hex       | Ratio   | Normal Text | Large Text |
+| --------------- | --------- | ------- | ----------- | ---------- |
+| Distance        | `#566D71` | 5.07:1  | AA          | AAA        |
+| Ground Earth    | `#806200` | 5.29:1  | AA          | AAA        |
+| Advantageous    | `#1E766D` | 5.01:1  | AA          | AAA        |
+| Jazz Blue       | `#1D699F` | 5.43:1  | AA          | AAA        |
+| Windsurfing     | `#366E96` | 5.07:1  | AA          | AAA        |
+| Mountain Pass   | `#5C6A6A` | 5.21:1  | AA          | AAA        |
+| Black           | `#000000` | 19.40:1 | AAA         | AAA        |
+| Pepper Jelly    | `#C92243` | 5.11:1  | AA          | AAA        |
+| Nymph's Delight | `#78698C` | 4.62:1  | AA          | AAA        |
+| Myrtle Green    | `#317A75` | 4.65:1  | AA          | AAA        |
 
 ## Installation
 
 1. Open **Extensions** in VS Code (`Ctrl+Shift+X` / `⌘+Shift+X`)
-2. Search for **Accessible (AA) Themes**
+2. Search for **Accessible (AA) Theme**
 3. Install and select either:
    - **Accessible (AA) Dark**
    - **Accessible (AA) Light**
