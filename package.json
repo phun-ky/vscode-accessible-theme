@@ -36,12 +36,17 @@
     }
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^11.0.1",
+    "@release-it/conventional-changelog": "^12.0.2",
     "eslint": "^10.0.0",
-    "eslint-config-phun-ky": "^2.0.3",
+    "eslint-config-phun-ky": "^2.0.11",
     "git-cz": "^4.9.0",
     "prettier": "^3.8.0",
-    "release-it": "^20.2.0"
+    "release-it": "^21.1.0"
+  },
+  "overrides": {
+    "get-uri": {
+      "basic-ftp": "^6.2.6"
+    }
   },
   "engines": {
     "vscode": ">=1.70.0"
