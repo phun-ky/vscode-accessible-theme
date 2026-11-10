@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.46](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.45...1.0.46) (2026-11-10)
+
+### Bug
+
+* 🐛 raise light theme comment and CSS pseudo-element contrast to AA ([077cde2](https://github.com/phun-ky/vscode-accessible-theme/commit/077cde2cda71844d312928dd27b3a181fc547efd)), closes [#67](https://github.com/phun-ky/vscode-accessible-theme/issues/67)
+
 ## [1.0.45](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.44...1.0.45) (2026-11-10)
 
 ### Tasks
