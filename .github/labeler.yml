@@ -7,6 +7,10 @@
   - changed-files:
       - any-glob-to-any-file:
           - '*'
+'section: tests':
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'test/**'
 'experience: developer':
   - changed-files:
       - any-glob-to-any-file:

@@ -35,7 +35,7 @@
     "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
     "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
     "style:lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test 'test/**/*.test.mjs'"
   },
   "config": {
     "commitizen": {

@@ -61,16 +61,17 @@ these:
 
 **With dark background: Gram's Hair - `#F5F6F7`**:
 
-| Color         | Hex       | Ratio  | Normal Text | Large Text |
-| ------------- | --------- | ------ | ----------- | ---------- |
-| Distance      | `#566D71` | 5.07:1 | AA          | AAA        |
-| Ground Earth  | `#806200` | 5.29:1 | AA          | AAA        |
-| Advantageous  | `#1E766D` | 5.07:1 | AA          | AAA        |
-| Jazz Blue     | `#1D699F` | 5.43:1 | AA          | AAA        |
-| Windsurfing   | `#366E96` | 5.43:1 | AA          | AAA        |
-| Mountain Pass | `#5C6A6A` | 5.21:1 | AA          | AAA        |
-| Black         | `#000000` | 19.4:1 | AAA         | AAA        |
-| Pepper Jelly  | `#C92243` | 5.11:1 | AA          | AAA        |
+| Color           | Hex       | Ratio  | Normal Text | Large Text |
+| --------------- | --------- | ------ | ----------- | ---------- |
+| Distance        | `#566D71` | 5.07:1 | AA          | AAA        |
+| Ground Earth    | `#806200` | 5.29:1 | AA          | AAA        |
+| Advantageous    | `#1E766D` | 5.07:1 | AA          | AAA        |
+| Jazz Blue       | `#1D699F` | 5.43:1 | AA          | AAA        |
+| Windsurfing     | `#366E96` | 5.43:1 | AA          | AAA        |
+| Mountain Pass   | `#5C6A6A` | 5.21:1 | AA          | AAA        |
+| Black           | `#000000` | 19.4:1 | AAA         | AAA        |
+| Pepper Jelly    | `#C92243` | 5.11:1 | AA          | AAA        |
+| Nymph's Delight | `#78698C` | 4.62:1 | AA          | AAA        |
 
 ## Installation
 
