@@ -205,8 +205,13 @@ The extension is data, not code:
 - **`package.json`** contributes both themes under `contributes.themes`, with
   the label users pick in **Preferences: Color Theme**. It has no `main` or
   `browser` entry point, so the extension runs no code.
-- **`.vscodeignore`** is an allowlist: only the two themes, `package.json`,
-  README, CHANGELOG and LICENSE go into the `.vsix`.
+- **`images/icon.svg`** is the Marketplace icon, and `npm run render:icon`
+  renders it to `images/icon.png` (256 px, a palette PNG), which is what ships.
+  Edit the SVG, then render and commit both. It needs Google Chrome and Python
+  with Pillow. `galleryBanner` in `package.json` sets the Marketplace header
+  colour.
+- **`.vscodeignore`** is an allowlist: only the two themes, the icon,
+  `package.json`, README, CHANGELOG and LICENSE go into the `.vsix`.
 - **`scripts/check-pack.mjs`** reads the built `.vsix` and checks what users
   would get; see [Development](#development).
 - **`test/`** holds the contrast tests; see [Tests](#tests).
@@ -227,16 +232,17 @@ Development Host, and pick the theme there with **Preferences: Color Theme**. Or
 install the packed file:
 `code --install-extension vscode-accessible-theme.vsix`.
 
-| Command                      | What it does                                                                                                     |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| `npm test`                   | Runs the contrast tests and the README palette check with Node's test runner                                     |
-| `npm run style:lint`         | Lints the JavaScript and Markdown files with ESLint and Prettier                                                 |
-| `npm run style:format-check` | Checks the format of the JSON and YAML files with Prettier                                                       |
-| `npm run style:format`       | Fixes what `style:lint` and `style:format-check` can fix                                                         |
-| `npm run package`            | Packs the extension into `vscode-accessible-theme.vsix` with vsce                                                |
-| `npm run check:pack`         | Reads the `.vsix` and fails on an unexpected file, a manifest that differs from `package.json` or a broken theme |
-| `npm run release:dry-run`    | Shows whether merging would release, and the planned version and changelog                                       |
-| `npm run commit`             | Helps write a commit message in the project's style                                                              |
+| Command                      | What it does                                                                                                                                 |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm test`                   | Runs the contrast tests and the README palette check with Node's test runner                                                                 |
+| `npm run style:lint`         | Lints the JavaScript and Markdown files with ESLint and Prettier                                                                             |
+| `npm run style:format-check` | Checks the format of the JSON and YAML files with Prettier                                                                                   |
+| `npm run style:format`       | Fixes what `style:lint` and `style:format-check` can fix                                                                                     |
+| `npm run package`            | Packs the extension into `vscode-accessible-theme.vsix` with vsce                                                                            |
+| `npm run check:pack`         | Reads the `.vsix` and fails on an unexpected file, a manifest that differs from `package.json`, a broken theme or icon, or a stale CHANGELOG |
+| `npm run render:icon`        | Renders `images/icon.png` from `images/icon.svg`                                                                                             |
+| `npm run release:dry-run`    | Shows whether merging would release, and the planned version and changelog                                                                   |
+| `npm run commit`             | Helps write a commit message in the project's style                                                                                          |
 
 Run `npm run check:pack` after `npm run package`.
 
@@ -344,8 +350,8 @@ GitHub Actions:
 1. When a merged pull request changes what gets published, the publish workflow
    checks whether there is anything to release: a `feat`, `fix`, `perf` or
    `revert` commit, or a breaking change, that touches the published files (the
-   themes, `package.json`, README, LICENSE or `.vscodeignore`). Other changes
-   wait for the next release.
+   themes, the icon, `package.json`, README, LICENSE or `.vscodeignore`). Other
+   changes wait for the next release.
 2. If so, release-it picks the version from the commits, updates the changelog,
    then packs the extension, so the packed CHANGELOG includes the new version,
    checks the package with `npm run check:pack`, and publishes that same file to

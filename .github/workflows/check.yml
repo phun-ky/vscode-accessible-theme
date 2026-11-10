@@ -12,6 +12,7 @@ on:
       - '.github/**'
       - '.githooks/**'
       - 'themes/**'
+      - 'images/**'
       - '**/*.md'
       - '**/*.json'
       - '**/*.yml'

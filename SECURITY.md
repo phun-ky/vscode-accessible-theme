@@ -47,9 +47,9 @@ What you can rely on:
 - **No code runs.** The extension contributes two theme files and nothing else:
   `package.json` has no `main` or `browser` entry point and no activation
   events, so VS Code has no code of the extension to run. `npm run check:pack`
-  fails a package that contains any file outside the expected eight (the two
-  themes, `package.json`, README, CHANGELOG, LICENSE and the two manifest files
-  vsce writes).
+  fails a package that contains any file outside the expected nine (the two
+  themes, the icon, `package.json`, README, CHANGELOG, LICENSE and the two
+  manifest files vsce writes).
 - **No side effects.** The extension doesn't access the network or the file
   system, doesn't change your settings, and doesn't collect or send any data.
 - **No dependencies are shipped.** The `.vsix` contains no `node_modules`; every

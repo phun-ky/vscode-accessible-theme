@@ -274,7 +274,7 @@
   "osps_qa_05_01_status": "Met",
   "osps_qa_05_01_justification": "No generated executables are committed: the .vsix is built in CI and ignored by git.",
   "osps_qa_05_02_status": "Met",
-  "osps_qa_05_02_justification": "The only binary files are four PNG images in public/ (screenshots of the themes); there are no executables or other unreviewable binaries.",
+  "osps_qa_05_02_justification": "The only binary files are PNG images: the screenshots in public/ and the Marketplace icon, images/icon.png, rendered from images/icon.svg by npm run render:icon. There are no executables or other unreviewable binaries.",
   "osps_vm_02_01_status": "Met",
   "osps_vm_02_01_justification": "Security contacts (email and GitHub private vulnerability reporting): https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md#reporting-a-vulnerability",
   "osps_ac_04_01_status": "Met",

@@ -25,6 +25,7 @@
   },
   "scripts": {
     "bestpractices:url": "node scripts/bestpractices-url.mjs",
+    "capture:screenshots": "node scripts/capture-screenshots.mjs",
     "check:bestpractices": "node scripts/check-bestpractices.mjs",
     "check:pack": "node scripts/check-pack.mjs vscode-accessible-theme.vsix",
     "commit": "npx git-cz",
@@ -34,6 +35,7 @@
     "publish:openvsx": "if [ \"$OPENVSX_PUBLISH\" = true ]; then ovsx publish vscode-accessible-theme.vsix --trusted-publishing --skip-duplicate; else echo \"Skipping Open VSX: the OPENVSX_PUBLISH variable is not true\"; fi",
     "release": "release-it",
     "release:dry-run": ".github/scripts/should-release.sh && release-it --ci --dry-run --github.release=false --no-git.requireCleanWorkingDir --no-git.requireUpstream",
+    "render:icon": "node scripts/render-icon.mjs",
     "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
     "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
     "style:lint": "eslint .",
@@ -81,5 +83,10 @@
     ]
   },
   "displayName": "Accessible (AA) Theme",
-  "publisher": "phun-ky"
+  "publisher": "phun-ky",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#262831",
+    "theme": "dark"
+  }
 }

@@ -26,7 +26,7 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 - [Changelog](#changelog)
 - [Sponsor me](#sponsor-me)
 
-![Screenshot of vscode with dark theme](./public/dark.png)
+![Accessible (AA) Dark in VS Code, editing test/wcag.mjs from this repository](./public/dark.png)
 
 ## Features
 
@@ -42,7 +42,7 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 - WCAG AA contrast ratio for editor and UI elements
 - Bracket pair highlighting colours optimised for quick scanning
 
-![Screenshot of vscode with light theme](./public/light.png)
+![Accessible (AA) Light in VS Code, editing test/wcag.mjs from this repository](./public/light.png)
 
 ## Palette
 

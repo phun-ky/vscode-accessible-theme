@@ -1,9 +1,10 @@
-# Ship only what the extension needs: the two themes, plus the manifest,
-# README, CHANGELOG and LICENSE. README images load from GitHub (vsce rewrites
+# Ship only what the extension needs: the two themes and the Marketplace icon,
+# plus the manifest, README, CHANGELOG and LICENSE. README images load from GitHub (vsce rewrites
 # relative image links), so public/ stays out. Checked by npm run check:pack.
 **
 !themes/accessible-dark-color-theme.json
 !themes/accessible-light-color-theme.json
+!images/icon.png
 !package.json
 !README.md
 !CHANGELOG.md
