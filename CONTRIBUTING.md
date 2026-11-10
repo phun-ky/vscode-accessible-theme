@@ -174,7 +174,7 @@ Enhancement suggestions are tracked as
   demonstrate the steps or point out the part which the suggestion is related
   to. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on
   macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast)
-  or [this tool](https://github.com/GNOME/byzanz) on Linux.
+  or [this tool](https://gitlab.gnome.org/Archive/byzanz) on Linux.
 - **Explain why this enhancement would be useful** to most Accessible (AA) Theme
   users. You may also want to point out the other projects that solved it better
   and which could serve as inspiration.
