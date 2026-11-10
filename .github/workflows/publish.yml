@@ -59,15 +59,16 @@ jobs:
         if: steps.guard.outputs.release == 'true'
         run: npm audit --omit=dev --audit-level=high
       - name: Release
-        # release-it bumps the version and changelog, packages and checks the
-        # .vsix (after:bump), publishes it to the Marketplace and Open VSX
-        # (before:git:release), then pushes the release commit and tag and
-        # creates the GitHub release with the .vsix attached
+        # release-it bumps the version and writes the changelog, packages and
+        # checks the .vsix (before:release), publishes it to the Marketplace
+        # and Open VSX (before:git:release), then pushes the release commit and
+        # tag and creates the GitHub release with the .vsix attached.
+        # --verbose puts the hooks' output (vsce, ovsx, check:pack) in the log
         if: steps.guard.outputs.release == 'true'
         run: |
           git config user.name "$ACTOR"
           git config user.email "$ACTOR@users.noreply.github.com"
-          npm run release
+          npm run release -- --verbose
         env:
           ACTOR: ${{ github.actor }} # via env, never interpolated into the script
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
