@@ -128,8 +128,10 @@ Advisory Database:
 | Licence outside the policy | New dependency         | Not merged                                                                                  |
 
 **Accepted exceptions.** A vulnerability that can't be fixed yet and can't be
-exploited through this project is allowed in dependency review and listed here.
-Each one is removed as soon as a fix is reachable:
+exploited through this project is allowed in dependency review, listed here, and
+recorded as an [OpenVEX](https://openvex.dev/) statement in
+[`vex.openvex.json`](vex.openvex.json). Each one is removed as soon as a fix is
+reachable:
 
 | Advisory                                                                            | Package        | Why it is accepted                                                                                                                                                                                                                                                                                                  | Remove when                                               |
 | ----------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |

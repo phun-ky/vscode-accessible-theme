@@ -1,0 +1,40 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://github.com/phun-ky/vscode-accessible-theme/blob/main/vex.openvex.json",
+  "author": "Alexander Vassbotn Røyne-Helgesen",
+  "role": "Maintainer",
+  "timestamp": "2026-11-10T00:00:00Z",
+  "version": 1,
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+        "name": "GHSA-g3hv-75wg-m249"
+      },
+      "timestamp": "2026-11-10T00:00:00Z",
+      "products": [
+        {
+          "@id": "https://marketplace.visualstudio.com/items?itemName=phun-ky.vscode-accessible-theme"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "component_not_present",
+      "impact_statement": "minimatch is a development dependency only (eslint, @eslint/config-array, typescript-eslint, eslint-plugin-import-x and @vscode/vsce require ^10) and is not in the published .vsix, which ships no dependencies. In development, the only glob patterns it matches are this repository's own lint and packaging configuration."
+    },
+    {
+      "vulnerability": {
+        "@id": "https://github.com/advisories/GHSA-238p-pmpm-9mq7",
+        "name": "GHSA-238p-pmpm-9mq7"
+      },
+      "timestamp": "2026-11-10T00:00:00Z",
+      "products": [
+        {
+          "@id": "https://marketplace.visualstudio.com/items?itemName=phun-ky.vscode-accessible-theme"
+        }
+      ],
+      "status": "not_affected",
+      "justification": "component_not_present",
+      "impact_statement": "katex is a development dependency only (eslint-config-phun-ky > @eslint/markdown > micromark-extension-math > katex) and is not in the published .vsix, which ships no dependencies. In development, ESLint loads katex but never calls it: lint parses Markdown and never renders math to HTML."
+    }
+  ]
+}
