@@ -5,6 +5,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { describe, test } from 'node:test';
 
+import { textColours } from './syntax-colours.mjs';
 import { contrast } from './wcag.mjs';
 
 const AA = 4.5;
@@ -13,28 +14,6 @@ const themes = manifest.contributes.themes.map(({ label, path }) => ({
   label,
   theme: JSON.parse(fs.readFileSync(path, 'utf8'))
 }));
-/**
- * Every foreground a theme gives to syntax: tokenColors and
- * semanticTokenColors.
- * @param {object} theme
- * @returns {{ where: string, colour: string }[]}
- */
-const syntaxColours = (theme) => {
-  const fromTokens = (theme.tokenColors ?? [])
-    .filter((rule) => rule.settings?.foreground)
-    .map((rule) => ({
-      where: rule.name ?? [].concat(rule.scope ?? []).join(', '),
-      colour: rule.settings.foreground
-    }));
-  const fromSemantic = Object.entries(theme.semanticTokenColors ?? {})
-    .map(([selector, value]) => ({
-      where: `semantic ${selector}`,
-      colour: typeof value === 'string' ? value : value?.foreground
-    }))
-    .filter(({ colour }) => colour);
-
-  return [...fromTokens, ...fromSemantic];
-};
 
 describe('syntax colours reach WCAG AA on the editor background', () => {
   test('there are themes to check', () => {
@@ -44,13 +23,7 @@ describe('syntax colours reach WCAG AA on the editor background', () => {
   for (const { label, theme } of themes) {
     test(label, () => {
       const background = theme.colors['editor.background'];
-      const colours = [
-        {
-          where: 'editor.foreground',
-          colour: theme.colors['editor.foreground']
-        },
-        ...syntaxColours(theme)
-      ];
+      const colours = textColours(theme);
 
       assert.ok(colours.length > 1, `${label} has syntax colours`);
 
