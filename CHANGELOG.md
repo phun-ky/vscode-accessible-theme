@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.45](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.44...1.0.45) (2026-11-10)
+
+### Tasks
+
+* 🤖 lint every file, Markdown included ([c68e661](https://github.com/phun-ky/vscode-accessible-theme/commit/c68e661c39385f675083e2103f7f8a2bfdfedcd0)), closes [#72](https://github.com/phun-ky/vscode-accessible-theme/issues/72)
+* 🤖 refresh dev dependencies and move to release-it 21 ([ce8a7d7](https://github.com/phun-ky/vscode-accessible-theme/commit/ce8a7d79ad6049f5ec947dfee3dbe7c451a59be8)), closes [#77](https://github.com/phun-ky/vscode-accessible-theme/issues/77), references [#61](https://github.com/phun-ky/vscode-accessible-theme/issues/61) [#63](https://github.com/phun-ky/vscode-accessible-theme/issues/63) [#64](https://github.com/phun-ky/vscode-accessible-theme/issues/64) [#65](https://github.com/phun-ky/vscode-accessible-theme/issues/65) [#66](https://github.com/phun-ky/vscode-accessible-theme/issues/66) [#73](https://github.com/phun-ky/vscode-accessible-theme/issues/73)
+* 🤖 update the Dependabot configuration ([264eaef](https://github.com/phun-ky/vscode-accessible-theme/commit/264eaefb91a3b4beba0a897da5dc231c5546f491)), references [#73](https://github.com/phun-ky/vscode-accessible-theme/issues/73)
+
+### Documentation
+
+* ✏️ give the fonts code block a language ([7f45859](https://github.com/phun-ky/vscode-accessible-theme/commit/7f458597c70d52593f117891c034b714644ba8c0)), references [#72](https://github.com/phun-ky/vscode-accessible-theme/issues/72)
+
+### Bug
+
+* 🐛 ship only the themes, manifest and docs in the extension ([60090c2](https://github.com/phun-ky/vscode-accessible-theme/commit/60090c2af87939aef17fd75ebc160c91f5a6cf61)), closes [#69](https://github.com/phun-ky/vscode-accessible-theme/issues/69)
+
 ## [1.0.44](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.43...1.0.44) (2026-06-04)
 
 ### Tasks
