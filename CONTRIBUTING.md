@@ -270,6 +270,18 @@ fails them can't be merged.
 Ratios are not rounded: 4.499:1 fails. A failing test names the key, the colours
 and the ratio.
 
+What a pull request needs:
+
+- **New or changed colours must pass the contrast tests**, and a new colour for
+  code gets a row in the README palette table.
+- **Bug fixes must come with a regression test** that fails without the fix, as
+  the contrast tests did for
+  [#67](https://github.com/phun-ky/vscode-accessible-theme/issues/67) and
+  [#68](https://github.com/phun-ky/vscode-accessible-theme/issues/68).
+- **New test helpers or scripts must come with tests**, as `test/ui-pairs.mjs`
+  does in `test/ui-contrast.test.mjs`.
+- **Packaging changes** are tested by `npm run check:pack`, which runs in CI.
+
 To add or change a colour:
 
 1. Edit the theme file. Use **Developer: Inspect Editor Tokens and Scopes** in
@@ -284,10 +296,6 @@ To add or change a colour:
    so: map it to its background in `test/ui-pairs.mjs`, or add it to `SKIPPED`
    with the reason.
 5. Add screenshots of both themes, before and after, to the pull request.
-
-Packaging changes are tested by `npm run check:pack`, which runs in CI. A change
-to the test helpers comes with a test of its own, as in
-`test/ui-contrast.test.mjs`.
 
 #### Developer Certificate of Origin
 
