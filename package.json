@@ -25,6 +25,7 @@
   },
   "scripts": {
     "commit": "npx git-cz",
+    "prepare": "git config core.hooksPath .githooks || true",
     "release": "release-it",
     "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
     "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
