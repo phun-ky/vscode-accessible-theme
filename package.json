@@ -26,8 +26,9 @@
   "scripts": {
     "commit": "npx git-cz",
     "release": "release-it",
-    "style:format": "./node_modules/.bin/eslint -c ./eslint.config.mjs src  --fix && ./node_modules/.bin/prettier --write ./eslint.config.mjs src",
-    "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
+    "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
+    "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
+    "style:lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "config": {
