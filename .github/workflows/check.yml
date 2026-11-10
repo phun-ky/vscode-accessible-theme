@@ -44,12 +44,14 @@ jobs:
         run: npm run style:lint
       - name: Check the format of JSON and YAML files # Also fails on invalid theme JSON
         run: npm run style:format-check
-      - name: Test # WCAG AA contrast of every syntax colour in both themes
+      - name: Test # WCAG AA contrast of every text colour, and the README palette
         run: npm test
       - name: Package the extension
         run: npm run package
       - name: Check the package # Exact file list, manifest, themes, README images
         run: npm run check:pack
+      - name: Check the Best Practices answers # Valid statuses, links resolve
+        run: npm run check:bestpractices
 
   notify:
     name: Notify failed check
