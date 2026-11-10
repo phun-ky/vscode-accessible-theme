@@ -13,6 +13,7 @@ const EXPECTED_FILES = [
   'extension.vsixmanifest',
   'extension/LICENSE.txt',
   'extension/changelog.md',
+  'extension/images/icon.png',
   'extension/package.json',
   'extension/readme.md',
   'extension/themes/accessible-dark-color-theme.json',
@@ -153,6 +154,28 @@ for (const { label, path: themePath, uiTheme } of themes) {
     `${label}: has colors (${Object.keys(theme.colors ?? {}).length}) and tokenColors (${(theme.tokenColors ?? []).length})`
   );
 }
+
+// The Marketplace and the Extensions view show the icon; it must be a square
+// PNG of at least 128 pixels
+const iconEntry = manifest.icon
+  ? entries.get(`extension/${manifest.icon}`)
+  : undefined;
+const isPng = iconEntry
+  ?.subarray(0, 8)
+  .equals(Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]));
+const [iconWidth, iconHeight] = isPng
+  ? [iconEntry.readUInt32BE(16), iconEntry.readUInt32BE(20)]
+  : [0, 0];
+
+check(
+  isPng === true && iconWidth === iconHeight && iconWidth >= 128,
+  `icon ${manifest.icon} is a square PNG of at least 128 px (${iconWidth}×${iconHeight})`
+);
+check(
+  /^#[0-9a-f]{6}$/i.test(manifest.galleryBanner?.color ?? '') &&
+    ['dark', 'light'].includes(manifest.galleryBanner?.theme),
+  `galleryBanner is ${JSON.stringify(manifest.galleryBanner)}`
+);
 
 // The Changelog tab shows the packaged CHANGELOG, so its newest entry must be
 // the version being installed: "## [1.0.47](...)", or "# [1.1.0](...)" for a
