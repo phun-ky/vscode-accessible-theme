@@ -90,10 +90,10 @@ Select **Accessible (AA) Dark** or **Accessible (AA) Light**.
 
 ## Accessibility
 
-- Meets **WCAG AA contrast** (4.5:1) for every syntax color, and for every UI
-  text color the themes set against the background it is drawn on: tabs, bars,
-  inputs, status bar items, git decorations, bracket pair colors and terminal
-  ANSI colors. `npm test` checks this for both themes. UI colors the themes
+- Meets **WCAG AA contrast** (4.5:1) for every syntax colour, and for every UI
+  text colour the themes set against the background it is drawn on: tabs, bars,
+  inputs, status bar items, git decorations, bracket pair colours and terminal
+  ANSI colours. `npm test` checks this for both themes. UI colours the themes
   leave unset (some widgets and borders) use VS Code's defaults.
 - Designed to be legible for long coding sessions
 - Balanced bracket colors for better nesting visibility
