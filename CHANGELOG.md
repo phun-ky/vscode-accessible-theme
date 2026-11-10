@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.47](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.46...1.0.47) (2026-11-10)
+
+### Documentation
+
+* ✏️ write the accessibility section in British English ([19a5832](https://github.com/phun-ky/vscode-accessible-theme/commit/19a583247e63f731c52991c251538e0dea582606)), references [#70](https://github.com/phun-ky/vscode-accessible-theme/issues/70) [#68](https://github.com/phun-ky/vscode-accessible-theme/issues/68)
+
+### Bug
+
+* 🐛 raise light theme UI, bracket and terminal contrast to AA ([fc1800b](https://github.com/phun-ky/vscode-accessible-theme/commit/fc1800b77af324cff6394188d05405372db55c49)), closes [#68](https://github.com/phun-ky/vscode-accessible-theme/issues/68)
+
 ## [1.0.46](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.45...1.0.46) (2026-11-10)
 
 ### Bug
