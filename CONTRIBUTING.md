@@ -36,7 +36,7 @@ forward to your contributions. 🎉
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[Accessible (AA) Theme Code of Conduct](https://github.com/phun-ky/vscode-accessible-theme/blob/master/CODE_OF_CONDUCT.md).
+[Accessible (AA) Theme Code of Conduct](https://github.com/phun-ky/vscode-accessible-theme/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report
 unacceptable behaviour to <code-of-conduct@phun-ky.net>.
 
@@ -57,8 +57,7 @@ recommend the following:
 - Open an
   [Issue](https://github.com/phun-ky/vscode-accessible-theme/issues/new).
 - Provide as much context as you can about what you're running into.
-- Provide project and platform versions (nodejs, npm, etc), depending on what
-  seems relevant.
+- Provide your VS Code version, the extension version and your operating system.
 
 We will then take care of the issue as soon as possible.
 
@@ -88,15 +87,18 @@ steps in advance to help us fix any potential bug as fast as possible.
 - To see if other users have experienced (and potentially already solved) the
   same issue you are having, check if there is not already a bug report existing
   for your bug or error in the
-  [bug tracker](https://github.com/phun-ky/vscode-accessible-themeissues?q=label%3Abug).
+  [bug tracker](https://github.com/phun-ky/vscode-accessible-theme/issues?q=label%3A%22problems%3A%20%F0%9F%90%9B%20bug%22).
 - Also make sure to search the internet (including Stack Overflow) to see if
   users outside of the GitHub community have discussed the issue.
 - Collect information about the bug:
-  - Stack trace (Traceback)
-  - OS, Platform and Version (Windows, Linux, macOS, x86, ARM)
-  - Version of the interpreter, compiler, SDK, runtime environment, package
-    manager, depending on what seems relevant.
-  - Possibly your input and the output
+  - VS Code version (**Help: About**) and the extension version
+  - The theme: **Accessible (AA) Dark** or **Accessible (AA) Light**
+  - Operating system
+  - The language or file type, and a short snippet that shows the problem
+  - A screenshot, and the colour you see if you know it (**Developer: Inspect
+    Editor Tokens and Scopes** shows it)
+  - Other extensions or settings that change colours, such as
+    `editor.semanticHighlighting.enabled` or `workbench.colorCustomizations`
   - Can you reliably reproduce the issue? And can you also reproduce it with
     older versions?
 
@@ -104,10 +106,8 @@ steps in advance to help us fix any potential bug as fast as possible.
 
 > You must never report security related issues, vulnerabilities or bugs
 > including sensitive information to the issue tracker, or elsewhere in public.
-> Instead sensitive bugs must be sent by email to
-> <vscode-accessible-theme@phun-ky.net>.
-
-<!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
+> Instead, report them privately through
+> [GitHub private vulnerability reporting](https://github.com/phun-ky/vscode-accessible-theme/security/advisories/new).
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the
 project:
@@ -132,8 +132,8 @@ Once it's filed:
   Bugs with the `pending: need repro` tag will not be addressed until they are
   reproduced.
 - If the team is able to reproduce the issue, it will be marked `🐛 needs fix`,
-  as well as possibly other tags (such as `problems: critical`), and the issue
-  will be left to be implemented by someone.
+  as well as possibly other tags (such as `problems: 🧨 critical`), and the
+  issue will be left to be implemented by someone.
 
 ### Suggesting Enhancements
 
