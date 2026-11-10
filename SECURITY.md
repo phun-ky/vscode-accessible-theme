@@ -95,7 +95,19 @@ deploy to that environment.
 
   Both lines must print the same digest.
 
-Git tags are not signed, and releases carry no provenance attestation.
+- **Build provenance:** from the first release after 1.0.47, the publish
+  workflow signs a build provenance attestation for the `.vsix` with Sigstore,
+  naming this repository, the workflow and the commit that built it. The GitHub
+  release has it attached as `vscode-accessible-theme.vsix.sigstore.json`.
+  Because the Marketplace serves the same file, either copy can be checked:
+
+  ```shell
+  gh attestation verify vscode-accessible-theme.vsix --repo phun-ky/vscode-accessible-theme --signer-workflow phun-ky/vscode-accessible-theme/.github/workflows/publish.yml
+  ```
+
+  1.0.47 and earlier releases have no attestation.
+
+Git tags are not signed.
 
 ## Dependencies
 
