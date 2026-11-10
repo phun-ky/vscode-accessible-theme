@@ -25,9 +25,11 @@
   },
   "scripts": {
     "commit": "npx git-cz",
+    "prepare": "git config core.hooksPath .githooks || true",
     "release": "release-it",
-    "style:format": "./node_modules/.bin/eslint -c ./eslint.config.mjs src  --fix && ./node_modules/.bin/prettier --write ./eslint.config.mjs src",
-    "style:lint": "./node_modules/.bin/eslint -c ./eslint.config.mjs src && ./node_modules/.bin/prettier --check src",
+    "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
+    "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
+    "style:lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "config": {
@@ -36,12 +38,17 @@
     }
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^11.0.1",
+    "@release-it/conventional-changelog": "^12.0.2",
     "eslint": "^10.0.0",
-    "eslint-config-phun-ky": "^2.0.3",
+    "eslint-config-phun-ky": "^2.0.11",
     "git-cz": "^4.9.0",
     "prettier": "^3.8.0",
-    "release-it": "^20.2.0"
+    "release-it": "^21.1.0"
+  },
+  "overrides": {
+    "get-uri": {
+      "basic-ftp": "^6.2.6"
+    }
   },
   "engines": {
     "vscode": ">=1.70.0"

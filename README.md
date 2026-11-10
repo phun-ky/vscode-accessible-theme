@@ -97,7 +97,7 @@ Select **Accessible (AA) Dark** or **Accessible (AA) Light**.
 
 ## Recommended fonts to be used with this theme:
 
-```
+```text
 Menlo for Powerline, Menlo, Consolas, DejaVu Sans Mono, 'Droid Sans Mono', 'monospace', monospace
 ```
 
