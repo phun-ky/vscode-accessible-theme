@@ -31,6 +31,14 @@ forward to your contributions. 🎉
     - [Suggesting Enhancements](#suggesting-enhancements)
       - [Before Submitting an Enhancement](#before-submitting-an-enhancement)
       - [How Do I Submit a Good Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
+    - [Contributing Code](#contributing-code)
+      - [Architecture](#architecture)
+      - [Development](#development)
+      - [Coding Style](#coding-style)
+      - [Tests](#tests)
+      - [Developer Certificate of Origin](#developer-certificate-of-origin)
+      - [Commits and Pull Requests](#commits-and-pull-requests)
+      - [Releases](#releases)
   - [Attribution](#attribution)
 
 ## Code of Conduct
@@ -106,8 +114,10 @@ steps in advance to help us fix any potential bug as fast as possible.
 
 > You must never report security related issues, vulnerabilities or bugs
 > including sensitive information to the issue tracker, or elsewhere in public.
-> Instead, report them privately through
-> [GitHub private vulnerability reporting](https://github.com/phun-ky/vscode-accessible-theme/security/advisories/new).
+> Instead, report them privately as described in the
+> [security policy](https://github.com/phun-ky/vscode-accessible-theme/blob/main/SECURITY.md#reporting-a-vulnerability):
+> through GitHub private vulnerability reporting or by email to
+> <security@phun-ky.net>.
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the
 project:
@@ -178,6 +188,164 @@ Enhancement suggestions are tracked as
 - **Explain why this enhancement would be useful** to most Accessible (AA) Theme
   users. You may also want to point out the other projects that solved it better
   and which could serve as inspiration.
+
+### Contributing Code
+
+Larger changes, such as new colours across a theme, are best discussed in an
+issue first, with screenshots, so the work fits the [roadmap](ROADMAP.md).
+
+#### Architecture
+
+The extension is data, not code:
+
+- **`themes/accessible-dark-color-theme.json`** and
+  **`themes/accessible-light-color-theme.json`** are the two themes. `colors`
+  holds the workbench (UI) colours, `tokenColors` the TextMate syntax colours
+  and `semanticTokenColors` the semantic highlighting colours.
+- **`package.json`** contributes both themes under `contributes.themes`, with
+  the label users pick in **Preferences: Color Theme**. It has no `main` or
+  `browser` entry point, so the extension runs no code.
+- **`.vscodeignore`** is an allowlist: only the two themes, `package.json`,
+  README, CHANGELOG and LICENSE go into the `.vsix`.
+- **`scripts/check-pack.mjs`** reads the built `.vsix` and checks what users
+  would get; see [Development](#development).
+- **`test/`** holds the contrast tests; see [Tests](#tests).
+
+#### Development
+
+You need Node.js 24 and npm 11.
+
+```shell-session
+npm ci
+npm test
+npm run package
+npm run check:pack
+```
+
+To try a change in VS Code, open this folder, press `F5` to start an Extension
+Development Host, and pick the theme there with **Preferences: Color Theme**. Or
+install the packed file:
+`code --install-extension vscode-accessible-theme.vsix`.
+
+| Command                      | What it does                                                                                                     |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `npm test`                   | Runs the contrast tests and the README palette check with Node's test runner                                     |
+| `npm run style:lint`         | Lints the JavaScript and Markdown files with ESLint and Prettier                                                 |
+| `npm run style:format-check` | Checks the format of the JSON and YAML files with Prettier                                                       |
+| `npm run style:format`       | Fixes what `style:lint` and `style:format-check` can fix                                                         |
+| `npm run package`            | Packs the extension into `vscode-accessible-theme.vsix` with vsce                                                |
+| `npm run check:pack`         | Reads the `.vsix` and fails on an unexpected file, a manifest that differs from `package.json` or a broken theme |
+| `npm run release:dry-run`    | Shows whether merging would release, and the planned version and changelog                                       |
+| `npm run commit`             | Helps write a commit message in the project's style                                                              |
+
+Run `npm run check:pack` after `npm run package`.
+
+#### Coding Style
+
+JavaScript and Markdown follow the project's [ESLint](https://eslint.org/)
+configuration (`eslint-config-phun-ky`) and [Prettier](https://prettier.io/)
+formatting, and JSON and YAML follow Prettier. Colours in the theme files are
+hex values, written as `#RRGGBB`, or `#RRGGBBAA` for a colour with transparency.
+A contribution must pass `npm run style:lint` and `npm run style:format-check`
+with no errors. Both run in CI on every pull request, and a pull request that
+fails them can't be merged.
+
+#### Tests
+
+`npm test` runs these with Node's test runner:
+
+- **`test/contrast.test.mjs`:** every syntax colour (`editor.foreground`,
+  `tokenColors` and `semanticTokenColors`) must reach 4.5:1 against
+  `editor.background`.
+- **`test/ui-contrast.test.mjs`:** every UI text colour the themes set, from
+  tabs and the status bar to bracket pair colours and the terminal ANSI colours,
+  must reach 4.5:1 against the background it is drawn on. `test/ui-pairs.mjs`
+  pairs each foreground key with its background.
+- **`test/readme-palette.test.mjs`:** the README palette tables must list
+  exactly the colours each theme uses for code, with the measured ratio and WCAG
+  levels.
+- **`test/wcag.test.mjs`:** the WCAG 2.x contrast calculation in
+  `test/wcag.mjs`, against known values.
+
+Ratios are not rounded: 4.499:1 fails. A failing test names the key, the colours
+and the ratio.
+
+To add or change a colour:
+
+1. Edit the theme file. Use **Developer: Inspect Editor Tokens and Scopes** in
+   VS Code to find the scope or key a piece of text uses.
+2. Run `npm test`. A colour below 4.5:1 fails with its ratio; pick a darker or
+   lighter shade until it passes.
+3. If the colour is new for code, add a row for it to the theme's palette table
+   in the README. The name is the nearest match in
+   [color-name-list](https://github.com/meodai/color-name-list), and `npm test`
+   reports the ratio and levels the row must show.
+4. If a new UI foreground key has no background named after it, `npm test` says
+   so: map it to its background in `test/ui-pairs.mjs`, or add it to `SKIPPED`
+   with the reason.
+5. Add screenshots of both themes, before and after, to the pull request.
+
+Packaging changes are tested by `npm run check:pack`, which runs in CI. A change
+to the test helpers comes with a test of its own, as in
+`test/ui-contrast.test.mjs`.
+
+#### Developer Certificate of Origin
+
+Every commit must be signed off under the
+[Developer Certificate of Origin](https://developercertificate.org/) (DCO): a
+statement that you wrote the change, or otherwise have the right to submit it
+under the project's licence. You agree to it by adding a `Signed-off-by` line
+with your name and email to the commit message:
+
+```text
+Signed-off-by: Your Name <you@example.com>
+```
+
+- **Per commit:** `git commit -s` adds the line for you.
+- **Always:** `npm ci` sets `core.hooksPath` to `.githooks`, and the hook in
+  `.githooks/prepare-commit-msg` adds the line to every commit, including those
+  made by `npm run commit` or your editor.
+- **Forgot?** Sign off every commit on your branch and push again:
+  `git rebase --signoff main` then `git push --force-with-lease`.
+
+The DCO check on every pull request fails if a commit isn't signed off.
+
+#### Commits and Pull Requests
+
+- Commits follow [Conventional Commits](https://www.conventionalcommits.org/)
+  (`feat:`, `fix:`, `docs:`, ...). `npm run commit` helps write them. Releases
+  and the changelog are generated from them (see [Releases](#releases)), so pick
+  the type that matches the change: a colour that changes what users see is a
+  `fix:` or a `feat:`.
+- A breaking change needs a `type!:` and a `BREAKING CHANGE:` footer that says
+  what to change. For this extension that means renaming or removing a theme
+  (users' `workbench.colorTheme` setting names it by its label) or narrowing
+  `engines.vscode`.
+- Write a `#` in a commit message only before an issue number. The changelog
+  turns `#` and what follows it into an issue link, so write colours without it
+  (`78698C`).
+- Open a pull request against `main`. The Checks workflow lints, checks the
+  format, runs the tests, packs the extension and checks the package; dependency
+  review, CodeQL and the DCO check also run. All of them must pass.
+
+#### Releases
+
+The maintainer merges pull requests, and releases follow automatically from
+GitHub Actions:
+
+1. When a merged pull request changes what gets published, the publish workflow
+   checks whether there is anything to release: a `feat`, `fix`, `perf` or
+   `revert` commit, or a breaking change, that touches the published files (the
+   themes, `package.json`, README, LICENSE or `.vscodeignore`). Other changes
+   wait for the next release.
+2. If so, release-it picks the version from the commits, updates the changelog,
+   packs the extension, checks the package with `npm run check:pack`, and
+   publishes that same file to the Visual Studio Marketplace with Trusted
+   Publishing.
+3. The release commit and tag go to `main`, and a GitHub release is created with
+   the `.vsix` attached.
+
+`npm run release:dry-run` shows what a merge would release.
 
 ## Attribution
 
