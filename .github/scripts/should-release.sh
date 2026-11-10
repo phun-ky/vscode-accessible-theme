@@ -16,6 +16,7 @@ set -euo pipefail
 # CHANGELOG.md is shipped too, but release-it writes it.
 published_files=(
   themes
+  images/icon.png
   package.json
   README.md
   LICENSE

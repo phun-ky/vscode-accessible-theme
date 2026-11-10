@@ -28,6 +28,7 @@
   - changed-files:
       - any-glob-to-any-file:
           - 'themes/**'
+          - 'images/**'
           - 'public/**'
 'context: github':
   - changed-files:

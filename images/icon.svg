@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Accessible (AA) Theme</title>
+  <desc>Lines of code in the dark theme's syntax colours on its editor background, with an AA tag.</desc>
+  <!-- Editor background: Sky Captain -->
+  <rect width="128" height="128" rx="22" fill="#262831"/>
+  <!-- Code lines in the dark theme's syntax colours, each 5:1 or more on Sky Captain -->
+  <g stroke-width="10" stroke-linecap="round">
+    <path d="M23 27h16" stroke="#C79500"/>
+    <path d="M55 27h30" stroke="#469EDD"/>
+    <path d="M35 47h12" stroke="#2CAAA0"/>
+    <path d="M63 47h42" stroke="#E4E4E7"/>
+    <path d="M35 67h36" stroke="#95C1E2"/>
+    <path d="M87 67h8" stroke="#FF6666"/>
+    <path d="M23 87h50" stroke="#99ACB2"/>
+  </g>
+  <!-- AA tag: Sky Captain on Gram's Hair, drawn as strokes so no font is needed -->
+  <rect x="76" y="92" width="38" height="24" rx="6" fill="#F5F6F7"/>
+  <g fill="none" stroke="#262831" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M82 110l5.5-13 5.5 13M84.3 105.5h6.4"/>
+    <path d="M97 110l5.5-13 5.5 13M99.3 105.5h6.4"/>
+  </g>
+</svg>
