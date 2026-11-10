@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.1.0](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.47...1.1.0) (2026-11-10)
+
+### Documentation
+
+* ✏️ correct the README palette and the extension name ([e09fe04](https://github.com/phun-ky/vscode-accessible-theme/commit/e09fe047d689ba248e7a822f045e42084972c588)), references [#70](https://github.com/phun-ky/vscode-accessible-theme/issues/70)
+* ✏️ fix CONTRIBUTING links and fit the bug report to a theme ([fe138a6](https://github.com/phun-ky/vscode-accessible-theme/commit/fe138a6fe4e5aaed740b8d37115b6e8be5204f86)), references [#70](https://github.com/phun-ky/vscode-accessible-theme/issues/70)
+* ✏️ link byzanz at its GNOME GitLab archive ([6b7860e](https://github.com/phun-ky/vscode-accessible-theme/commit/6b7860e16b8dfadb8bb2e3d7b2a7296a9ec9d8d4)), references [#70](https://github.com/phun-ky/vscode-accessible-theme/issues/70)
+* ✏️ link color-name-list at its repository ([86a2ca3](https://github.com/phun-ky/vscode-accessible-theme/commit/86a2ca3aae0db143009aeb8559674364e3c54e39)), references [#80](https://github.com/phun-ky/vscode-accessible-theme/issues/80)
+* ✏️ write the README and CONTRIBUTING in British English ([28fad90](https://github.com/phun-ky/vscode-accessible-theme/commit/28fad90f801a6ebc98747d6a9252f6466b75632d)), references [#70](https://github.com/phun-ky/vscode-accessible-theme/issues/70)
+* 📝 add a security policy, assurance case and Security Insights ([890ea77](https://github.com/phun-ky/vscode-accessible-theme/commit/890ea77a3a61f181153e14168b175814d5ae6d96)), references [#79](https://github.com/phun-ky/vscode-accessible-theme/issues/79)
+* 📝 add governance and a roadmap, and document how to contribute ([2a1d859](https://github.com/phun-ky/vscode-accessible-theme/commit/2a1d859002cbb621a19e06378a6ccccc4fd1a37c)), references [#80](https://github.com/phun-ky/vscode-accessible-theme/issues/80)
+* 📝 document release attestations and the new packing order ([e8a415a](https://github.com/phun-ky/vscode-accessible-theme/commit/e8a415a264b6ab346bfea15211cfedd05d800442)), references [#95](https://github.com/phun-ky/vscode-accessible-theme/issues/95)
+* 📝 document the icon and the nine packaged files ([cae0ada](https://github.com/phun-ky/vscode-accessible-theme/commit/cae0adaa95286f8dc0cc4418320a95b0204cf4c8)), references [#82](https://github.com/phun-ky/vscode-accessible-theme/issues/82)
+* 📝 record the accepted exceptions as OpenVEX statements ([bfd5c41](https://github.com/phun-ky/vscode-accessible-theme/commit/bfd5c41f3677e154be1e67c7d6cdc7410c6103f5)), references [#79](https://github.com/phun-ky/vscode-accessible-theme/issues/79)
+* 📝 state what tests a pull request needs ([cbdfd8c](https://github.com/phun-ky/vscode-accessible-theme/commit/cbdfd8ca0cb6a3142365317a34931897bdd52bfb)), references [#80](https://github.com/phun-ky/vscode-accessible-theme/issues/80)
+* 📸 replace the README screenshots with captures of both themes ([0992632](https://github.com/phun-ky/vscode-accessible-theme/commit/0992632acb4a253a0e0625efe9dbb793d815d1ba)), references [#82](https://github.com/phun-ky/vscode-accessible-theme/issues/82)
+
+### Feature
+
+* ✨ add a Marketplace icon and a dark gallery banner ([f998777](https://github.com/phun-ky/vscode-accessible-theme/commit/f998777fb21ec0b831b20ff3a20dc77d8407c643)), references [#82](https://github.com/phun-ky/vscode-accessible-theme/issues/82)
+
 ## [1.0.47](https://github.com/phun-ky/vscode-accessible-theme/compare/1.0.46...1.0.47) (2026-11-10)
 
 ### Documentation
