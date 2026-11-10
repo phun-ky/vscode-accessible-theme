@@ -20,7 +20,7 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 - [Accessibility](#accessibility)
 - [Recommended fonts to be used with this theme:](#recommended-fonts-to-be-used-with-this-theme)
 - [Contributing](#contributing)
-- [License](#license)
+- [Licence](#licence)
 - [Changelog](#changelog)
 - [Sponsor me](#sponsor-me)
 
@@ -28,7 +28,7 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 
 ## Features
 
-- Carefully balanced color palette with consistent contrasts
+- Carefully balanced colour palette with consistent contrasts
 - Distinct hues for:
   - Keywords, variables, constants, and operators
   - Brackets, parentheses, and punctuation
@@ -36,9 +36,9 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
   - Classes, types, and module references
   - Strings, numbers, symbols, and regex
 - Markdown support (headings, code blocks, links, emphasis)
-- Git status decorations and terminal ANSI colors
+- Git status decorations and terminal ANSI colours
 - WCAG AA contrast ratio for editor and UI elements
-- Bracket pair highlighting colors optimized for quick scanning
+- Bracket pair highlighting colours optimised for quick scanning
 
 ![Screenshot of vscode with light theme](./public/light.png)
 
@@ -50,7 +50,7 @@ against the theme files.
 
 **With dark background: Sky Captain - `#262831`**:
 
-| Color            | Hex       | Ratio   | Normal Text | Large Text |
+| Colour           | Hex       | Ratio   | Normal Text | Large Text |
 | ---------------- | --------- | ------- | ----------- | ---------- |
 | Bucolic Blue     | `#99ACB2` | 6.22:1  | AA          | AAA        |
 | Vivid Amber      | `#C79500` | 5.40:1  | AA          | AAA        |
@@ -65,7 +65,7 @@ against the theme files.
 
 **With light background: Gram's Hair - `#F5F6F7`**:
 
-| Color           | Hex       | Ratio   | Normal Text | Large Text |
+| Colour          | Hex       | Ratio   | Normal Text | Large Text |
 | --------------- | --------- | ------- | ----------- | ---------- |
 | Distance        | `#566D71` | 5.07:1  | AA          | AAA        |
 | Ground Earth    | `#806200` | 5.29:1  | AA          | AAA        |
@@ -101,7 +101,7 @@ Select **Accessible (AA) Dark** or **Accessible (AA) Light**.
   ANSI colours. `npm test` checks this for both themes. UI colours the themes
   leave unset (some widgets and borders) use VS Code's defaults.
 - Designed to be legible for long coding sessions
-- Balanced bracket colors for better nesting visibility
+- Balanced bracket colours for better nesting visibility
 - Comments are distinguishable without being distracting
 
 ## Recommended fonts to be used with this theme:
@@ -117,7 +117,7 @@ Want to contribute? Please read the
 and
 [CODE_OF_CONDUCT.md](https://github.com/phun-ky/vscode-accessible-theme/blob/main/CODE_OF_CONDUCT.md)
 
-## License
+## Licence
 
 This project is licensed under the MIT License - see the
 [LICENSE](https://github.com/phun-ky/vscode-accessible-theme/blob/main/LICENSE)
