@@ -1,56 +1,90 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Publish
 
-# Controls when the workflow will run
 on:
-  pull_request:
-    types: [closed]
+  # Release when a push to main changes what gets published, or how. The
+  # release guard then decides whether there is anything to release. A push,
+  # not a merged pull_request event: the marketplace environment only allows
+  # main, and a pull_request run is on the PR's merge ref
+  push:
     branches: ['main']
+    paths:
+      - 'themes/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'README.md'
+      - 'LICENSE'
+      - '.vscodeignore'
+      - '.release-it.json'
+      - 'scripts/**'
+      - '.github/scripts/should-release.sh'
+      - '.github/workflows/publish.yml'
   workflow_dispatch:
+
+# Read-only by default; only the publish job gets an OIDC token
+permissions:
+  contents: read
+
+# One release at a time; never cancel a release halfway
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
 jobs:
   publish:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Manual runs too must be on main, which the environment requires anyway
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    # Named in the Marketplace and Open VSX trusted publishing policies, and
+    # deployable from main only
+    environment: marketplace
+    permissions:
+      contents: read # Release commits, tags and GitHub releases use GH_TOKEN
+      id-token: write # Marketplace and Open VSX trusted publishing (OIDC)
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 0 # Checkout all branches and tags
+          fetch-depth: 0 # The release guard and release-it read tags and commits
           token: ${{ secrets.GH_TOKEN }}
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v4
+      - name: Setup Node.js environment # No dependency cache in a publishing job
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '>=22.8.0'
+          node-version: 24
       - name: Install dependencies
-        run: | # Install and link dependencies
-          npm install -g @vscode/vsce
-          npm i
-          git checkout -- package-lock.json
-      - name: 'Release' # Interesting step
+        run: npm ci
+      - name: Check for changes to release
+        id: guard
+        run: .github/scripts/should-release.sh
+      - name: Audit dependencies # The .vsix ships none; this keeps the gate if that changes
+        if: steps.guard.outputs.release == 'true'
+        run: npm audit --omit=dev --audit-level=high
+      - name: Release
+        # release-it bumps the version and changelog, packages and checks the
+        # .vsix (after:bump), publishes it to the Marketplace and Open VSX
+        # (before:git:release), then pushes the release commit and tag and
+        # creates the GitHub release with the .vsix attached
+        if: steps.guard.outputs.release == 'true'
         run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor}}@users.noreply.github.com"
+          git config user.name "$ACTOR"
+          git config user.email "$ACTOR@users.noreply.github.com"
           npm run release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          ACTOR: ${{ github.actor }} # via env, never interpolated into the script
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: 'Publish to marketplace'
-        run: |
-          vsce package
-          vsce publish --skip-duplicate -p "${VSCE_TOKEN}"
-        env:
-          VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
+          # Set to true once Open VSX trusted publishing is registered
+          OPENVSX_PUBLISH: ${{ vars.OPENVSX_PUBLISH }}
+
   notify:
     name: Notify failed build
     needs: publish
     if: failure()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    # GITHUB_TOKEN is enough to open an issue; GH_TOKEN is for the release only
+    permissions:
+      issues: write
     steps:
-      - uses: jayqi/failed-build-issue-action@v1.2
+      - uses: drivendataorg/failed-build-issue-action@940568ce50eeef3f31a920614cefcc6102d2f930 # v1.3.0
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           label-name: 'problems: 💔 build failed'
+          create-label: false

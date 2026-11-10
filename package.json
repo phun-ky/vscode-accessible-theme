@@ -28,7 +28,10 @@
     "commit": "npx git-cz",
     "package": "vsce package --no-dependencies --out vscode-accessible-theme.vsix",
     "prepare": "git config core.hooksPath .githooks || true",
+    "publish:marketplace": "vsce publish --oidc --skip-duplicate --packagePath vscode-accessible-theme.vsix",
+    "publish:openvsx": "if [ \"$OPENVSX_PUBLISH\" = true ]; then ovsx publish vscode-accessible-theme.vsix --trusted-publishing --skip-duplicate; else echo \"Skipping Open VSX: the OPENVSX_PUBLISH variable is not true\"; fi",
     "release": "release-it",
+    "release:dry-run": ".github/scripts/should-release.sh && release-it --ci --dry-run --github.release=false --no-git.requireCleanWorkingDir --no-git.requireUpstream",
     "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
     "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
     "style:lint": "eslint .",
@@ -46,6 +49,7 @@
     "eslint-config-phun-ky": "^2.0.11",
     "git-cz": "^4.9.0",
     "globals": "^17.14.0",
+    "ovsx": "^1.3.0",
     "prettier": "^3.8.0",
     "release-it": "^21.1.0"
   },
@@ -56,9 +60,6 @@
   },
   "engines": {
     "vscode": ">=1.70.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "categories": [
     "Themes"
