@@ -39,7 +39,8 @@
     "style:format": "eslint . --fix && prettier --write '**/*.{json,yml,yaml}'",
     "style:format-check": "prettier --check '**/*.{json,yml,yaml}'",
     "style:lint": "eslint .",
-    "test": "node --test 'test/**/*.test.mjs'"
+    "test": "node --test 'test/**/*.test.mjs'",
+    "test:hooks": "node --test scripts/__tests__/commit-msg.test.mjs"
   },
   "config": {
     "commitizen": {
