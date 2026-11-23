@@ -24,6 +24,7 @@
     "url": "git+https://github.com/phun-ky/vscode-accessible-theme.git"
   },
   "scripts": {
+    "banners": "node scripts/banners/render.mjs",
     "bestpractices:url": "node scripts/bestpractices-url.mjs",
     "capture:screenshots": "node scripts/capture-screenshots.mjs",
     "check:bestpractices": "node scripts/check-bestpractices.mjs",
