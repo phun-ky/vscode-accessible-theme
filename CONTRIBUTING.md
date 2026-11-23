@@ -241,6 +241,7 @@ install the packed file:
 | `npm run package`            | Packs the extension into `vscode-accessible-theme.vsix` with vsce                                                                            |
 | `npm run check:pack`         | Reads the `.vsix` and fails on an unexpected file, a manifest that differs from `package.json`, a broken theme or icon, or a stale CHANGELOG |
 | `npm run render:icon`        | Renders `images/icon.png` from `images/icon.svg`                                                                                             |
+| `npm run banners -- 1.0`     | Renders the release banners for 1.0 into `public/images` from `scripts/banners/1.0.mjs`                                                      |
 | `npm run release:dry-run`    | Shows whether merging would release, and the planned version and changelog                                                                   |
 | `npm run commit`             | Helps write a commit message in the project's style                                                                                          |
 
