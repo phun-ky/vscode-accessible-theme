@@ -5,6 +5,8 @@ clarity, and reduced eye strain. This theme family includes both **Dark** and
 **Light** variants, tuned for **WCAG AA accessibility**. Based on the article
 [Accessible syntax highlight theme](https://phun-ky.net/2023/10/06/accessible-syntax-highlight-theme).
 
+[![VS Code Marketplace](https://vsmarketplacebadges.dev/version-short/phun-ky.vscode-accessible-theme.svg?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=phun-ky.vscode-accessible-theme)
+[![Open VSX](https://img.shields.io/open-vsx/v/phun-ky/vscode-accessible-theme?label=Open%20VSX)](https://open-vsx.org/extension/phun-ky/vscode-accessible-theme)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](http://makeapullrequest.com)
 [![SemVer 2.0](https://img.shields.io/badge/SemVer-2.0-green.svg)](http://semver.org/spec/v2.0.0.html)
@@ -81,6 +83,12 @@ against the theme files.
 | Myrtle Green    | `#317A75` | 4.65:1  | AA          | AAA        |
 
 ## Installation
+
+Install it from the
+[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=phun-ky.vscode-accessible-theme),
+or from
+[Open VSX](https://open-vsx.org/extension/phun-ky/vscode-accessible-theme) for
+VSCodium, Cursor and other editors that use it. Or, in the editor:
 
 1. Open **Extensions** in VS Code (`Ctrl+Shift+X` / `⌘+Shift+X`)
 2. Search for **Accessible (AA) Theme**
